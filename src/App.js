@@ -1,9 +1,7 @@
 import React from 'react';
-import { HashRouter, Route, Switch, withRouter, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
+import { AnimatedSwitch } from 'react-router-transition';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import './App.css';
 import Menu from './component/Menu';
 import Home from './component/Home';
@@ -23,16 +21,23 @@ function App() {
               <div className='column contenido'>
                   <div className='green-column'>
                     <Switch>
-                      <Route 
-                        exact 
-                        path="/" 
-                        render={(props) => <Home />}
-                      />
-                      <Route 
-                        exact 
-                        path="/datos" 
-                        render={(props) => <Datos />}
-                      />
+                      <AnimatedSwitch
+                        atEnter={{ opacity: 0 }}
+                        atLeave={{ opacity: 0 }}
+                        atActive={{ opacity: 1 }}
+                        className="switch-wrapper"
+                      >
+                        <Route 
+                          exact 
+                          path="/" 
+                          render={(props) => <Home />}
+                        />
+                        <Route 
+                          exact 
+                          path="/datos" 
+                          render={(props) => <Datos />}
+                        />
+                      </AnimatedSwitch>
                     </Switch>
                   </div>
               </div>
