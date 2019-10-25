@@ -12,18 +12,32 @@ function App() {
   return (
     <HashRouter basename='/'>
       <div className="App">
-        <Switch>
-          <Route 
-            exact 
-            path="/" 
-            render={(props) => <Home />}
-          />
-          <Route 
-            exact 
-            path="/datos" 
-            render={(props) => <Datos />}
-          />
-        </Switch>
+        <div className='wrapperHome'>
+          <div className='row'>
+              <div className='column'>
+                  <div className='blue-column'>
+                      Some Text in Column One
+                  </div>
+              </div>
+              <div className='column contenido'>
+                  <div className='green-column'>
+                    <Switch>
+                      <Route 
+                        exact 
+                        path="/" 
+                        render={(props) => <Home />}
+                      />
+                      <Route 
+                        exact 
+                        path="/datos" 
+                        render={(props) => <Datos />}
+                      />
+                    </Switch>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
       </div>
     </HashRouter>
     
