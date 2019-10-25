@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './App.css';
+import Menu from './component/Menu';
 import Home from './component/Home';
 import Datos from './component/Datos';
 
@@ -16,7 +17,7 @@ function App() {
           <div className='row'>
               <div className='column'>
                   <div className='blue-column'>
-                      Some Text in Column One
+                    <Menu />
                   </div>
               </div>
               <div className='column contenido'>
