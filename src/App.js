@@ -5,25 +5,26 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './App.css';
+import Home from './component/Home';
+import Datos from './component/Datos';
 
 function App() {
   return (
     <HashRouter basename='/'>
       <div className="App">
-            <header className="App-header">
-              <Container>
-                <Row>
-                  <Col>1 of 2</Col>
-                  <Col>2 of 2</Col>
-                </Row>
-                <Row>
-                  <Col>1 of 3</Col>
-                  <Col>2 of 3</Col>
-                  <Col>3 of 3</Col>
-                </Row>
-              </Container>
-            </header>
-          </div>
+        <Switch>
+          <Route 
+            exact 
+            path="/" 
+            render={(props) => <Home />}
+          />
+          <Route 
+            exact 
+            path="/datos" 
+            render={(props) => <Datos />}
+          />
+        </Switch>
+      </div>
     </HashRouter>
     
   );
