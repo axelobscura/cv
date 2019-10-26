@@ -6,4 +6,11 @@
 
 .menu a {
     text-decoration: none;
+    color: #ffffff;
+    transition: all 1s;
+    font-weight: 100;
+}
+
+.menu a:hover {
+    color: #cccccc;
 }

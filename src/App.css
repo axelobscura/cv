@@ -1,5 +1,5 @@
 .route-wrapper {
-  position: relative;
+  position: absolute;
 }
 
 .route-wrapper > div {
@@ -47,7 +47,7 @@
 }
 
 .wrapperHome .column.contenido {
-  flex: 11;
+  flex: 12;
   margin: 0;
   padding: 0;
 }
@@ -56,7 +56,20 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  background: #f2f2f2;
   justify-content: center;
+}
+
+.wrapperHome .blue-column i.material-icons {
+  font-size: 2em;
+  color: #000000;
+  margin: 20px 0;
+  font-size: 1.2em;
+  transition: all 0.5s;
+}
+
+.wrapperHome .blue-column i.material-icons:hover {
+  color: #ff0000;
 }
 
 .wrapperHome .green-column {
