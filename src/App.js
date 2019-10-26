@@ -66,6 +66,16 @@ function App() {
                           path="/datos" 
                           render={(props) => <Datos />}
                         />
+                        <Route 
+                          exact 
+                          path="/educacion" 
+                          render={(props) => <Datos />}
+                        />
+                        <Route 
+                          exact 
+                          path="/experiencia" 
+                          render={(props) => <Datos />}
+                        />
                       </AnimatedSwitch>
                     </Switch>
                   </div>
