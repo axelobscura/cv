@@ -27,7 +27,7 @@ function App() {
     },
     atLeave: {
       opacity: 0,
-      scale: 0.1,
+      scale: 0.9,
     },
     atActive: {
       opacity: 1,
@@ -49,10 +49,10 @@ function App() {
                     <Switch>
                       <AnimatedSwitch
                         atEnter={{ offset: +100 }}
-                        atLeave={{ offset: +100 }}
+                        atLeave={{ offset: -100 }}
                         atActive={{ offset: 0 }}
                         mapStyles={(styles) => ({
-                          transform: `translateY(${styles.offset}%)`,
+                          transform: `translateX(${styles.offset}%)`,
                         })}
                         className="switch-wrapper"
                       >
