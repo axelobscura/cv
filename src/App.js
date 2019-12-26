@@ -48,8 +48,8 @@ function App() {
                   <div className='green-column'>
                     <Switch>
                       <AnimatedSwitch
-                        atEnter={{ offset: +100 }}
-                        atLeave={{ offset: -100 }}
+                        atEnter={{ offset: +0 }}
+                        atLeave={{ offset: -0 }}
                         atActive={{ offset: 0 }}
                         mapStyles={(styles) => ({
                           transform: `translateX(${styles.offset}%)`,
