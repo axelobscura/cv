@@ -9,7 +9,7 @@ const Home = () => {
     const [data, setData] = useState({ hits: [] });
     useEffect(async () => {
         const result = await axios(
-          'https://i.picsum.photos/id/327/400/400.jpg',
+          'https://hn.algolia.com/api/v1/search?query=redux',
         );
         setData(result.data);
       }, []);
