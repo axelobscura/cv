@@ -1,0 +1,18 @@
+.column.contenido {
+    background: rgb(20,20,20);
+background: radial-gradient(circle, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
+    position: absolut;
+}
+
+.column.contenido h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.column.contenido h2 {
+    color: #dedede;
+}
+
+.column.contenido p {
+    color: #888888;
+}

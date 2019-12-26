@@ -44,6 +44,7 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  background: #000000;
 }
 
 .wrapperHome .column.contenido {
@@ -56,13 +57,14 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background: #f2f2f2;
+  background: #111;
   justify-content: center;
+  box-shadow: 0 0 10px inset #000000;
 }
 
 .wrapperHome .blue-column i.material-icons {
   font-size: 2em;
-  color: #000000;
+  color: #ffffff;
   margin: 20px 0;
   font-size: 1.2em;
   transition: all 0.5s;
@@ -74,7 +76,6 @@
 
 .wrapperHome .green-column {
   height: 100vh;
-  background: #f2f2f2;
   display: flex;
   align-items: center;
   text-align: left;
