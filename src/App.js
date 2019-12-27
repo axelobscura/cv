@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter, Route, Switch } from "react-router-dom";
 import { spring,AnimatedSwitch } from 'react-router-transition';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,6 +8,7 @@ import Home from './component/Home';
 import Datos from './component/Datos';
 
 function App() {
+  const [count, setCount] = useState(0);
   function mapStyles(styles) {
     return {
       opacity: styles.opacity,
@@ -45,7 +46,7 @@ function App() {
                   </div>
               </div>
               <div className='column contenido'>
-                  <div className='green-column'>
+                  
                     <Switch>
                       <AnimatedSwitch
                         atEnter={{ offset: +0 }}
@@ -78,7 +79,6 @@ function App() {
                         />
                       </AnimatedSwitch>
                     </Switch>
-                  </div>
               </div>
           </div>
         </div>
