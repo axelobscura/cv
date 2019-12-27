@@ -17,6 +17,11 @@ const Datos = () => {
                     <hr/>
                     <h1>PROFESSIONAL SUMMARY</h1>
                     <p>{p.summary}</p>
+                    <ul className="hidden-xs">
+                        {p.summaryDetails.map(sd => (
+                            <li>{sd}</li>
+                        ))}
+                    </ul>
                 </div>
             ))}
             {/* 
