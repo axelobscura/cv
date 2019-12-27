@@ -1,4 +1,14 @@
 {
+    "profile": [
+        {
+            "name": "Axel Laurent Obscura Sarzotti",
+            "role": "Full Stack Developer",
+            "email": "axosar@gmail.com",
+            "phone": "5532206321",
+            "github": "https://github.com/axelobscura",
+            "summary": "Senior Full Stack Web Developer with 15 years of experience designing and developing backend architectures, decoupled and n-tier frontend web applications using HTML, CSS, JavaScript, JQuery, AJAX, JSON, XML, PHP, MySQL, NodeJS, Express, PosgressSQL, React JS, ReactJS, VueJS, NextJS…"
+        }
+    ],
     "SocialMedias": [
       "https://github.com/",
       "https://www.linkedin.com/",
