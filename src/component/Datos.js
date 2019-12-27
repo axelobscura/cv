@@ -4,7 +4,7 @@ const Datos = () => {
     return(
         <div>
             <h2>datos</h2>
-            <p>si calro</p>
+            <p>si claro</p>
         </div>
         
     )
