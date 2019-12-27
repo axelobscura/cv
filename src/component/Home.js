@@ -16,7 +16,7 @@ const Home = () => {
                 <Link to="/datos"><h1>Full Stack Developer</h1></Link>
                 <h2>Axel Laurent Obscura Sarzotti</h2>
                 <p>Coyoacán, México</p>
-                <i class="lni-angle-double-right" onClick={accion}></i>
+                <i className="lni-angle-double-right" onClick={accion}></i>
             </div>
         </div>
         

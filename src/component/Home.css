@@ -16,3 +16,12 @@ background: radial-gradient(circle, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
 .column.contenido p {
     color: #888888;
 }
+
+.lni-angle-double-right {
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.lni-angle-double-right:hover {
+    color: red;
+}
