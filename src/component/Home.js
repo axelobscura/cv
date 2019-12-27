@@ -24,7 +24,7 @@ const Home = () => {
                 Click me
             </button>
             <ul>
-            {data.hits.map(item => (
+            {data.hits.map((item, index) => (
                 <li key={item.objectID}>
                     <a href={item.url}>{item.title}</a>
                 </li>
