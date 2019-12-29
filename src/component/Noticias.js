@@ -22,9 +22,10 @@ const Noticias = (props) => {
             <Ticker
                 offset="10%"
                 move={true}
+                speed={props.speed}
                 >
                 {(index) => (
-                    <h3>{quotes[rand(0, quotes.length - 1)]}</h3>
+                    <props.tag> -{quotes[rand(0, quotes.length - 1)]}- </props.tag>
                 )}
             </Ticker>
         </div>
