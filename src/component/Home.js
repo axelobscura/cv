@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import './Home.css';
 
 const Home = () => {
-    const [count, setCount] = useState(0);
-    const [imagen, imagenCount] = useState("https://i.picsum.photos/id/327/1500/1500.jpg");
+    const [count, setCount] = useState(Math.floor(Math.random() * 1000));
+    const [imagen, imagenCount] = useState(`https://i.picsum.photos/id/${count}/1500/1500.jpg`);
     const accion = () => {
         setCount((Math.floor(Math.random() * 1000)));
         imagenCount(`https://i.picsum.photos/id/${count}/1500/1500.jpg`);

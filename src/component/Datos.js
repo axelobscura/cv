@@ -21,11 +21,11 @@ const Datos = () => {
                     <p className="p-0 m-0">{p.role}</p>
                     <h3>{p.email}</h3>
                     <p>{p.phone}</p>
-                    <Noticias tag={'p'} speed={9} detalles={p.summaryDetails} />
+                    <Noticias tag={'p'} speed={5} detalles={p.summaryDetails} />
                     <hr />
                     <h1>PROFESSIONAL SUMMARY</h1>
                     <p>{p.summary}</p>
-                    <Noticias tag={'h3'} speed={5} detalles={p.summaryDetails} />
+                    <Noticias tag={'h3'} speed={7} detalles={p.summaryDetails} />
                 </div>
             ))}
             </div>
