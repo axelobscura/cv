@@ -2,11 +2,11 @@
 
 body {
   margin: 0;
-  font-family: 'Big Shoulders Text', cursive;
+  font-family: 'Big Shoulders Text', sans-serif;
 }
 
 h1, h2, h3, h4, h5, p, a {
-  font-family: 'Big Shoulders Text', cursive !important;
+  font-family: 'Big Shoulders Text', sans-serif !important;
 }
 
 code {

@@ -1,20 +1,19 @@
 .column.contenido {
-    background: rgb(20,20,20);
-background: radial-gradient(circle, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
+    background: #fde04c;
     position: absolut;
 }
 
 .column.contenido h1 {
-    color: #ffffff;
+    color: #000;
     font-size: 2em;
 }
 
 .column.contenido h2 {
-    color: #dedede;
+    color: #222;
 }
 
 .column.contenido p {
-    color: #888888;
+    color: #444;
 }
 
 .lni-angle-double-right {
@@ -24,4 +23,13 @@ background: radial-gradient(circle, rgba(20,20,20,1) 0%, rgba(0,0,0,1) 100%);
 
 .lni-angle-double-right:hover {
     color: red;
+}
+
+.picture {
+    background: #000000;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+    border-radius: 50%;
+    border: 10px solid #fff;
 }

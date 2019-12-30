@@ -3,7 +3,6 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import { spring,AnimatedSwitch } from 'react-router-transition';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Menu from './component/Menu';
 import Home from './component/Home';
 import Datos from './component/Datos';
 
@@ -40,13 +39,7 @@ function App() {
       <div className="App">
         <div className='wrapperHome'>
           <div className='row'>
-              <div className='column'>
-                  <div className='blue-column'>
-                    <Menu />
-                  </div>
-              </div>
               <div className='column contenido'>
-                  
                     <Switch>
                       <AnimatedSwitch
                         atEnter={{ offset: +0 }}
@@ -55,7 +48,6 @@ function App() {
                         mapStyles={(styles) => ({
                           transform: `translateX(${styles.offset}%)`,
                         })}
-                        className="switch-wrapper"
                       >
                         <Route 
                           exact 
@@ -65,16 +57,6 @@ function App() {
                         <Route 
                           exact 
                           path="/datos" 
-                          render={(props) => <Datos />}
-                        />
-                        <Route 
-                          exact 
-                          path="/educacion" 
-                          render={(props) => <Datos />}
-                        />
-                        <Route 
-                          exact 
-                          path="/experiencia" 
                           render={(props) => <Datos />}
                         />
                       </AnimatedSwitch>
