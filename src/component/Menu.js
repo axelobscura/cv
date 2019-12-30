@@ -8,7 +8,7 @@ const Menu = (props) => {
             <ul>
                 <li><Link to="/"><i className="material-icons">change_history</i></Link></li>
                 <li><Link to="/datos"><i className="material-icons">eco</i></Link></li>
-                <li><Link to="/datos"><i className="material-icons">donut_large</i></Link></li>
+                <li><Link to="/technical"><i className="material-icons">donut_large</i></Link></li>
                 <li><Link to="/datos"><i className="material-icons">explore</i></Link></li>
                 <li><Link to="/datos"><i className="material-icons">fingerprint</i></Link></li>
             </ul>

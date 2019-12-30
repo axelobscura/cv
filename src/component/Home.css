@@ -35,3 +35,14 @@
     overflow: hidden;
     margin-bottom: 20px;
 }
+.technical ul {
+    list-style: none;
+    color: #000000;
+}
+.technical ul li {
+    text-align: left;
+}
+.technical ul li ul li, .technical ul li ul li p {
+    margin: 0;
+    padding: 0;
+}

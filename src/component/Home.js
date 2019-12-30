@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Datos from './Datos';
 import Entrada from './Entrada';
+import Technical from './Technical';
 import { Link } from "react-router-dom";
 import './Home.css';
 import profile from '../profile.jpeg';
@@ -64,6 +65,9 @@ const Home = () => {
                     </Route>
                     <Route exact path="/datos">
                         <Datos />
+                    </Route>
+                    <Route exact path="/technical">
+                        <Technical />
                     </Route>
                     </Switch>
                     </div>
