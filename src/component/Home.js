@@ -8,6 +8,7 @@ import Datos from './Datos';
 import Entrada from './Entrada';
 import { Link } from "react-router-dom";
 import './Home.css';
+import profile from '../profile.jpeg';
 
 const Home = () => {
     const [count, setCount] = useState(Math.floor(Math.random() * 1000));
@@ -46,7 +47,7 @@ const Home = () => {
                 <Col style={styles.row}>
                     <div style={styles.contenido}>
                         <div className="picture">
-                            
+                            <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
                         </div>
                         <Link to="/datos"><h1>Full Stack Developer</h1></Link>
                         <h2>Axel Laurent Obscura Sarzotti</h2>

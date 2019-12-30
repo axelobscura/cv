@@ -27,9 +27,11 @@
 
 .picture {
     background: #000000;
-    height: 250px;
-    width: 250px;
-    margin: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 5px solid #fff;
+    overflow: hidden;
+    margin-bottom: 20px;
 }

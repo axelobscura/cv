@@ -24,6 +24,7 @@ const Datos = () => {
                     <Noticias tag={'p'} speed={5} detalles={p.summaryDetails} />
                     <hr />
                     <h1>PROFESSIONAL SUMMARY</h1>
+                    <hr />
                     <p>{p.summary}</p>
                     <Noticias tag={'h3'} speed={7} detalles={p.summaryDetails} />
                 </div>
