@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Menu from './Menu';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-
+import Datos from './Datos';
+import Entrada from './Entrada';
 import { Link } from "react-router-dom";
 import './Home.css';
 
@@ -55,7 +57,14 @@ const Home = () => {
                 </Col>
                 <Col style={styles.row}>
                     <div style={styles.contenido}>
-                        2 of 2
+                    <Switch>
+                    <Route exact path="/">
+                        <Entrada />
+                    </Route>
+                    <Route exact path="/datos">
+                        <Datos />
+                    </Route>
+                    </Switch>
                     </div>
                 </Col>
             </Row>
