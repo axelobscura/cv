@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 
 const profile = data.profile;
 const tech = data.webtech;
+const frames = data.frames;
+const backend = data.backend;
 
 const Technical = () => {
     return (
@@ -15,13 +17,13 @@ const Technical = () => {
                 <hr/>
                 <h1>TECHNICAL SUMMARY</h1>
                 <hr/>
-                <Container>
+                <Container fluid={true}>
                     <Row>
                     <Col>
-                        <ul>
+                        <ul className="p-0">
                             <li>
-                                <p className="p-0 m-2">Web Technologies</p>
-                                <ul>
+                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
+                                <ul className="p-0">
                                     {tech.map(t => (
                                         <li><p className="p-0 m-0">{t}</p></li>
                                     ))}
@@ -30,11 +32,21 @@ const Technical = () => {
                         </ul>
                     </Col>
                     <Col>
-                        <ul>
+                        <ul className="p-0">
                             <li>
-                                <p className="p-0 m-2">Web Technologies</p>
-                                <ul>
-                                    {tech.map(t => (
+                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
+                                <ul className="p-0">
+                                    {backend.map(t => (
+                                        <li><p className="p-0 m-0">{t}</p></li>
+                                    ))}
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul className="p-0">
+                            <li>
+                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
+                                <ul className="p-0">
+                                    {frames.map(t => (
                                         <li><p className="p-0 m-0">{t}</p></li>
                                     ))}
                                 </ul>

@@ -23,6 +23,7 @@ const Noticias = (props) => {
                 offset="10%"
                 move={true}
                 speed={props.speed}
+                mode='smooth'
                 >
                 {(index) => (
                     <props.tag style={{ whiteSpace: "nowrap", margin: '0', padding: '0' }}> <i className="lni-chevron-right" style={{marginLeft: '10px', color: 'red'}}></i> {quotes[rand(0, quotes.length - 1)]} </props.tag>

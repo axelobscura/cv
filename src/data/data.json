@@ -30,7 +30,7 @@
     "webtech": [
       "HTML5",
       "CSS",
-      "Javascript",
+      "Vanilla Javascript",
       "AJAX",
       "JQuery",
       "UI/UX Frontend Design",
@@ -40,6 +40,19 @@
       "Angular",
       "React",
       "Vue"
+    ],
+    "frames": [
+      "Angular",
+      "React",
+      "Vue",
+      "Next",
+      "Spring",
+      "Cake"
+    ],
+    "backend": [
+      "Node",
+      "PHP",
+      "Rails"
     ],
     "SocialMedias": [
       "https://github.com/",

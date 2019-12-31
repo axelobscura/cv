@@ -66,7 +66,7 @@ const Home = () => {
                     <Route exact path="/datos">
                         <Datos />
                     </Route>
-                    <Route exact path="/technical">
+                    <Route exact path="/technical-full-stack">
                         <Technical />
                     </Route>
                     </Switch>
