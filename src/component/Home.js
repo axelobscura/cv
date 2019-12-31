@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { HashRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
+import CustomScroll from 'react-custom-scroll';
 import Menu from './Menu';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -39,7 +40,7 @@ const Home = () => {
             flexDirection: 'column',
             justifyContent: 'center',
             borderTop: '5px solid #111',
-            
+            overflow: 'hidden'
         }
     }
     return (
@@ -59,17 +60,23 @@ const Home = () => {
                 </Col>
                 <Col style={styles.row}>
                     <div style={styles.contenido}>
-                    <Switch>
-                    <Route exact path="/">
-                        <Entrada />
-                    </Route>
-                    <Route exact path="/datos">
-                        <Datos />
-                    </Route>
-                    <Route exact path="/technical-full-stack">
-                        <Technical />
-                    </Route>
-                    </Switch>
+                        
+                                <Switch>
+                                <Route exact path="/">
+                                    <Entrada />
+                                </Route>
+                                <Route exact path="/datos">
+                                    <Datos />
+                                </Route>
+                                <Route exact path="/technical-full-stack">
+                                <flexibleHeightElement style={{flex:1, minHeight: 0, minWidth: 0}}>
+                                    <CustomScroll heightRelativeToParent="10%">
+                                        <Technical />
+                                    </CustomScroll>
+                                </flexibleHeightElement>
+                                </Route>
+                                </Switch>
+                            
                     </div>
                 </Col>
             </Row>
