@@ -25,7 +25,7 @@ const Noticias = (props) => {
                 speed={props.speed}
                 >
                 {(index) => (
-                    <props.tag style={{ whiteSpace: "nowrap" }}> <i className="lni-chevron-right" style={{marginLeft: '10px', color: 'red'}}></i> {quotes[rand(0, quotes.length - 1)]} </props.tag>
+                    <props.tag style={{ whiteSpace: "nowrap", margin: '0', padding: '0' }}> <i className="lni-chevron-right" style={{marginLeft: '10px', color: 'red'}}></i> {quotes[rand(0, quotes.length - 1)]} </props.tag>
                 )}
             </Ticker>
         </div>
