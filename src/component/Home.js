@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Switch } from "react-router-dom";
-import CustomScroll from 'react-custom-scroll';
+
 import Menu from './Menu';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -69,11 +69,9 @@ const Home = () => {
                                     <Datos />
                                 </Route>
                                 <Route exact path="/technical-full-stack">
-                                <flexibleHeightElement style={{flex:1, minHeight: 0, minWidth: 0}}>
-                                    <CustomScroll heightRelativeToParent="10%">
+                                
                                         <Technical />
-                                    </CustomScroll>
-                                </flexibleHeightElement>
+                                    
                                 </Route>
                                 </Switch>
                             

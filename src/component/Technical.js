@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CustomScroll from 'react-custom-scroll';
 import data from "../data/data";
 import './Entrada.css';
 import Container from 'react-bootstrap/Container';
@@ -15,17 +15,16 @@ const languages = data.languages;
 const Technical = () => {
     return (
         <div style={{width:'100%'}}>
+            <flexibleHeightElement style={{flex:1, minHeight: 0, minWidth: 0}}>
+            <CustomScroll heightRelativeToParent="10%">
             <div className="technical">
-            
                 <hr/>
                 <h1>TECHNICAL SUMMARY</h1>
                 <hr/>
                 <Container fluid={true}>
                     <Row>
                     <Col>
-                    
                         <ul className="p-0">
-                        
                             <li>
                                 <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
                                 <ul className="p-0">
@@ -34,7 +33,6 @@ const Technical = () => {
                                     ))}
                                 </ul>
                             </li>
-                        
                         </ul>
                         <ul className="p-0">
                             <li>
@@ -75,8 +73,9 @@ const Technical = () => {
                     </Row>
                 </Container>
                 <hr/>
-                
             </div>
+            </CustomScroll>
+            </flexibleHeightElement>
         </div>
     )
 };
