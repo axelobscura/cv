@@ -48,7 +48,7 @@ const Home = () => {
             <Row style={styles.col}>
                 <Col style={styles.row}>
                     <div style={styles.contenido}>
-                        <div className="picture mia">
+                        <div className="picture miab axel">
                             <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
                         </div>
                         <Link to="/datos"><h1>Full Stack Developer</h1></Link>
