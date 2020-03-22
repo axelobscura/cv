@@ -51,7 +51,7 @@ const Home = () => {
                         <div className="picture miab axel">
                             <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
                         </div>
-                        <Link to="/datos"><h1>Full Stack Developer</h1></Link>
+                        <Link to="/datos"><h1>Senior Full Stack Developer</h1></Link>
                         <h2>Axel Laurent Obscura Sarzotti</h2>
                         <p>Coyoacán, México</p>
                         <i className="lni-angle-double-right" onClick={accion}></i>
