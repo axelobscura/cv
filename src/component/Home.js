@@ -26,7 +26,7 @@ const Home = () => {
         <>
             <Container fluid={true} className="d-flex">
                 <Row>
-                    <Col sm={12} style={{ background: '#444', padding: '0.3em' }}></Col>
+                    <Col sm={12} style={{ background: '#fff', padding: '0.3em' }}></Col>
                 </Row>
             </Container>
             <Container fluid={true} className="d-flex">
@@ -58,14 +58,14 @@ const Home = () => {
                             <h1 onClick={() => sayHello('profile')}>PROFILE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-user'></i>
                             </h1>
                         </Link>
-                        <div className="d-flex justify-content-between">
+                        <div className="d-flex justify-content-center align-items-center">
                             <div>
                                 <div className="picture miab axel">
                                     <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
                                 </div>
                             </div>
                             <div>
-                                <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 15 years of experience designing and developing backend architectures, decoupled and n-tier frontend web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, SQL, NodeJS, Express, PostgressSQL, MongoDB, ReactJS, Angular, VueJS, NextJS</b>.</p>
+                                <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 16 years of experience designing and developing backend architectures, decoupled and entier back to front web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, Laravel, Cake, SQL, PostgressSQL, MongoDB, NodeJS, Express, ReactJS, Angular, VueJS, NextJS, PWA, Wordpress, Joomla, Drupal, Magento</b>.</p>
                             </div>
                         </div>
                         <Link to="/datos">
@@ -81,11 +81,15 @@ const Home = () => {
                             </h1>
                         </Link>
                         <Link to="/technical-full-stack">
+                            <h1 className="mt-3" onClick={() => sayHello('work')}>PORTFOLIO<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-brush-alt'></i>
+                            </h1>
+                        </Link>
+                        <Link to="/technical-full-stack">
                             <h1 className="mt-3" onClick={() => sayHello}>CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i>
                             </h1>
                         </Link>
                     </Col>
-                    <Col sm={8} style={{ background: '#f4f4f4', padding: '0.7em' }}>
+                    <Col sm={8} style={{ background: '#fff', padding: '0.7em' }}>
                         <Switch>
                             <Route exact path="/">
                                 <Entrada />
