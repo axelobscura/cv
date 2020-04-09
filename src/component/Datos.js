@@ -8,9 +8,11 @@ import './Datos.css';
 const profile = data.profile;
 const Datos = () => {
     const detalles = [];
+    {/* 
     profile.map(p => {
         detalles.push(p.summaryDetails)
     })
+    */}
     return (
         <Container fluid={true} style={{ margin: '0', padding: '0' }}>
             <Row>

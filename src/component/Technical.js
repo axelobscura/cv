@@ -26,8 +26,8 @@ const Technical = () => {
                         <li>
                             <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
                             <ul className="p-0">
-                                {tech.map(t => (
-                                    <li><p className="p-0 m-0">{t}</p></li>
+                                {tech.map((t, index) => (
+                                    <li key={index}><p className="p-0 m-0">{t}</p></li>
                                 ))}
                             </ul>
                         </li>
@@ -36,14 +36,14 @@ const Technical = () => {
                         <li>
                             <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> LANGUAGES</b></h3>
                             <ul className="p-0">
-                                {languages.map(t => (
-                                    <li><p className="p-0 m-0">{t}</p></li>
+                                {languages.map((t, index) => (
+                                    <li key={index}><p className="p-0 m-0">{t}</p></li>
                                 ))}
                             </ul>
                         </li>
                     </ul>
-                    {profile.map(p => (
-                        <p>{p.summary}</p>
+                    {profile.map((p, index) => (
+                        <p key={index}>{p.summary}</p>
                     ))}
                 </Col>
                 <Col>
@@ -51,8 +51,8 @@ const Technical = () => {
                         <li>
                             <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
                             <ul className="p-0">
-                                {backend.map(t => (
-                                    <li><p className="p-0 m-0">{t}</p></li>
+                                {backend.map((t, index) => (
+                                    <li key={index}><p className="p-0 m-0">{t}</p></li>
                                 ))}
                             </ul>
                         </li>
@@ -61,8 +61,8 @@ const Technical = () => {
                         <li>
                             <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
                             <ul className="p-0">
-                                {frames.map(t => (
-                                    <li><p className="p-0 m-0">{t}</p></li>
+                                {frames.map((t, index) => (
+                                    <li key={index}><p className="p-0 m-0">{t}</p></li>
                                 ))}
                             </ul>
                         </li>

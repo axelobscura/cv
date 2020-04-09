@@ -11,13 +11,7 @@ import './Home.css';
 import profile from '../profile.jpeg';
 
 const Home = () => {
-    const [count, setCount] = useState(Math.floor(Math.random() * 1000));
-    const [imagen, imagenCount] = useState(`https://i.picsum.photos/id/${count}/1500/1500.jpg`);
     const [seleccionado, setSeleccionado] = useState('noSeleccionado')
-    const accion = () => {
-        setCount((Math.floor(Math.random() * 1000)));
-        imagenCount(`https://i.picsum.photos/id/${count}/1500/1500.jpg`);
-    }
     function sayHello(dato) {
         console.log(dato);
         setSeleccionado('seleccionado');
@@ -81,11 +75,11 @@ const Home = () => {
                             </h1>
                         </Link>
                         <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello('work')}>PORTFOLIO<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-brush-alt'></i>
+                            <h1 className="mt-3" onClick={() => sayHello('portfolio')}>PORTFOLIO<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-brush-alt'></i>
                             </h1>
                         </Link>
                         <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello}>CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i>
+                            <h1 className="mt-3" onClick={() => sayHello('contact   ')}>CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i>
                             </h1>
                         </Link>
                     </Col>

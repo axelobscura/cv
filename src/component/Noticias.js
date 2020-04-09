@@ -13,7 +13,6 @@ const quotes = []
 const Noticias = (props) => {
     props.detalles.map(p => {
         quotes.push(p);
-        console.log("elpush: " + p);
     })
     return (
         <div>
