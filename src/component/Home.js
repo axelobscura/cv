@@ -88,6 +88,7 @@ const Home = () => {
                         <h1 className="mt-3">EDUCATION<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-home'></i></h1>
                         <h1 className="mt-3">SKILLS<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-bi-cycle'></i></h1>
                         <h1 className="mt-3">WORK EXPERIENCE<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-cog'></i></h1>
+                        <h1 className="mt-3">CONTACT<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-telegram'></i></h1>
                     </Col>
                     <Col sm={8} style={{ background: '#f4f4f4', padding: '0.7em' }}>
                         <Switch>
