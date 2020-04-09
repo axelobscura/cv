@@ -1,5 +1,4 @@
 import React from 'react';
-import CustomScroll from 'react-custom-scroll';
 import data from "../data/data";
 import './Entrada.css';
 import Container from 'react-bootstrap/Container';
@@ -14,64 +13,65 @@ const languages = data.languages;
 
 const Technical = () => {
     return (
-        <div style={{ width: '100%' }}>
-            <div className="technical">
-                <h1>TECHNICAL SUMMARY</h1>
-                <hr />
-                <Container fluid={true}>
-                    <Row>
-                        <Col>
+        <Container fluid={true} style={{ margin: '0', padding: '0' }}>
+            <Row>
+                <Col sm={12} style={{ padding: '0.3em' }}>
+                    <h1><i className='lni lni-home'></i> TECHNICAL INFO</h1>
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                    <ul className="p-0">
+                        <li>
+                            <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
                             <ul className="p-0">
-                                <li>
-                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
-                                    <ul className="p-0">
-                                        {tech.map(t => (
-                                            <li><p className="p-0 m-0">{t}</p></li>
-                                        ))}
-                                    </ul>
-                                </li>
+                                {tech.map(t => (
+                                    <li><p className="p-0 m-0">{t}</p></li>
+                                ))}
                             </ul>
+                        </li>
+                    </ul>
+                    <ul className="p-0">
+                        <li>
+                            <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> LANGUAGES</b></h3>
                             <ul className="p-0">
-                                <li>
-                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> LANGUAGES</b></h3>
-                                    <ul className="p-0">
-                                        {languages.map(t => (
-                                            <li><p className="p-0 m-0">{t}</p></li>
-                                        ))}
-                                    </ul>
-                                </li>
+                                {languages.map(t => (
+                                    <li><p className="p-0 m-0">{t}</p></li>
+                                ))}
                             </ul>
-                            {profile.map(p => (
-                                <p>{p.summary}</p>
-                            ))}
-                        </Col>
-                        <Col>
+                        </li>
+                    </ul>
+                    {profile.map(p => (
+                        <p>{p.summary}</p>
+                    ))}
+                </Col>
+                <Col>
+                    <ul className="p-0">
+                        <li>
+                            <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
                             <ul className="p-0">
-                                <li>
-                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
-                                    <ul className="p-0">
-                                        {backend.map(t => (
-                                            <li><p className="p-0 m-0">{t}</p></li>
-                                        ))}
-                                    </ul>
-                                </li>
+                                {backend.map(t => (
+                                    <li><p className="p-0 m-0">{t}</p></li>
+                                ))}
                             </ul>
+                        </li>
+                    </ul>
+                    <ul className="p-0">
+                        <li>
+                            <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
                             <ul className="p-0">
-                                <li>
-                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
-                                    <ul className="p-0">
-                                        {frames.map(t => (
-                                            <li><p className="p-0 m-0">{t}</p></li>
-                                        ))}
-                                    </ul>
-                                </li>
+                                {frames.map(t => (
+                                    <li><p className="p-0 m-0">{t}</p></li>
+                                ))}
                             </ul>
-                        </Col>
-                    </Row>
-                </Container>
-                <hr />
-            </div>
-        </div>
+                        </li>
+                    </ul>
+                </Col>
+
+            </Row>
+        </Container>
+
     )
 };
 

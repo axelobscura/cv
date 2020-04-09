@@ -1,13 +1,4 @@
-.datos {
-    text-align: left;
-    padding: 1em;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .datos ul li {
     font-size: 0.5em;

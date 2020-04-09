@@ -18,14 +18,15 @@ const Home = () => {
         setCount((Math.floor(Math.random() * 1000)));
         imagenCount(`https://i.picsum.photos/id/${count}/1500/1500.jpg`);
     }
-    function sayHello() {
+    function sayHello(dato) {
+        console.log(dato);
         setSeleccionado('seleccionado');
     }
     return (
         <>
             <Container fluid={true} className="d-flex">
                 <Row>
-                    <Col sm={12} style={{ background: '#f2f2f2', padding: '0.3em' }}></Col>
+                    <Col sm={12} style={{ background: '#444', padding: '0.3em' }}></Col>
                 </Row>
             </Container>
             <Container fluid={true} className="d-flex">
@@ -33,9 +34,9 @@ const Home = () => {
                     <Col sm={2} style={{ background: '#111111' }}></Col>
                     <Col sm={6} style={{ background: '#f2f2f2' }}>
                         <Link to="/datos">
-                            <h1 style={{ fontSize: '1.9em', padding: '40px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
+                            <h1 style={{ fontSize: '1.9em', padding: '20px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
                         </Link>
-                        <h2 style={{ fontSize: '0.9em', paddingBottom: '40px', textAlign: 'left', fontWeight: 'bold' }}>Full Stack Developer</h2>
+                        <h2 style={{ fontSize: '0.9em', paddingBottom: '20px', textAlign: 'left', fontWeight: 'bold' }}>Full Stack Developer</h2>
                     </Col>
                     <Col sm={4} style={{ background: '#111111', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center' }}>
                         <a href="//twitter.com/axelobscura?lang=en" target="_blank">
@@ -53,7 +54,10 @@ const Home = () => {
             <Container fluid={true} className="d-flex">
                 <Row className="colProfile">
                     <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
-                        <Link to="/"><h1>PROFILE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-user'></i></h1></Link>
+                        <Link to="/">
+                            <h1 onClick={() => sayHello('profile')}>PROFILE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-user'></i>
+                            </h1>
+                        </Link>
                         <div className="d-flex justify-content-between">
                             <div>
                                 <div className="picture miab axel">
@@ -64,10 +68,22 @@ const Home = () => {
                                 <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 15 years of experience designing and developing backend architectures, decoupled and n-tier frontend web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, SQL, NodeJS, Express, PostgressSQL, MongoDB, ReactJS, Angular, VueJS, NextJS</b>.</p>
                             </div>
                         </div>
-                        <Link to="/datos"><h1 className="mt-3" onClick={sayHello}>EDUCATION<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-home'></i></h1></Link>
-                        <Link to="/technical-full-stack"><h1 className="mt-3">SKILLS<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-bi-cycle'></i></h1></Link>
-                        <Link to="/technical-full-stack"><h1 className="mt-3">WORK EXPERIENCE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-cog'></i></h1></Link>
-                        <Link to="/technical-full-stack"><h1 className="mt-3">CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i></h1></Link>
+                        <Link to="/datos">
+                            <h1 className="mt-3" onClick={() => sayHello('education')}>EDUCATION<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-home'></i>
+                            </h1>
+                        </Link>
+                        <Link to="/technical-full-stack">
+                            <h1 className="mt-3" onClick={() => sayHello('skills')}>SKILLS<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-bi-cycle'></i>
+                            </h1>
+                        </Link>
+                        <Link to="/technical-full-stack">
+                            <h1 className="mt-3" onClick={() => sayHello('work')}>WORK EXPERIENCE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-cog'></i>
+                            </h1>
+                        </Link>
+                        <Link to="/technical-full-stack">
+                            <h1 className="mt-3" onClick={() => sayHello}>CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i>
+                            </h1>
+                        </Link>
                     </Col>
                     <Col sm={8} style={{ background: '#f4f4f4', padding: '0.7em' }}>
                         <Switch>
