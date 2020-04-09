@@ -14,68 +14,63 @@ const languages = data.languages;
 
 const Technical = () => {
     return (
-        <div style={{width:'100%'}}>
-            <flexibleHeightElement style={{flex:1, minHeight: 0, minWidth: 0}}>
-            <CustomScroll heightRelativeToParent="10%">
+        <div style={{ width: '100%' }}>
             <div className="technical">
-                <hr/>
                 <h1>TECHNICAL SUMMARY</h1>
-                <hr/>
+                <hr />
                 <Container fluid={true}>
                     <Row>
-                    <Col>
-                        <ul className="p-0">
-                            <li>
-                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
-                                <ul className="p-0">
-                                    {tech.map(t => (
-                                        <li><p className="p-0 m-0">{t}</p></li>
-                                    ))}
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="p-0">
-                            <li>
-                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> LANGUAGES</b></h3>
-                                <ul className="p-0">
-                                    {languages.map(t => (
-                                        <li><p className="p-0 m-0">{t}</p></li>
-                                    ))}
-                                </ul>
-                            </li>
-                        </ul>
-                        {profile.map(p => (
-                            <p>{p.summary}</p>
-                        ))}
-                    </Col>
-                    <Col>
-                        <ul className="p-0">
-                            <li>
-                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
-                                <ul className="p-0">
-                                    {backend.map(t => (
-                                        <li><p className="p-0 m-0">{t}</p></li>
-                                    ))}
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul className="p-0">
-                            <li>
-                                <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
-                                <ul className="p-0">
-                                    {frames.map(t => (
-                                        <li><p className="p-0 m-0">{t}</p></li>
-                                    ))}
-                                </ul>
-                            </li>
-                        </ul>
-                    </Col>
+                        <Col>
+                            <ul className="p-0">
+                                <li>
+                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRONT END</b></h3>
+                                    <ul className="p-0">
+                                        {tech.map(t => (
+                                            <li><p className="p-0 m-0">{t}</p></li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul className="p-0">
+                                <li>
+                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> LANGUAGES</b></h3>
+                                    <ul className="p-0">
+                                        {languages.map(t => (
+                                            <li><p className="p-0 m-0">{t}</p></li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            </ul>
+                            {profile.map(p => (
+                                <p>{p.summary}</p>
+                            ))}
+                        </Col>
+                        <Col>
+                            <ul className="p-0">
+                                <li>
+                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> BACKEND</b></h3>
+                                    <ul className="p-0">
+                                        {backend.map(t => (
+                                            <li><p className="p-0 m-0">{t}</p></li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul className="p-0">
+                                <li>
+                                    <h3 className="p-0 m-2"><b><i className="lni-angle-double-right"></i> FRAMEWORKS</b></h3>
+                                    <ul className="p-0">
+                                        {frames.map(t => (
+                                            <li><p className="p-0 m-0">{t}</p></li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            </ul>
+                        </Col>
                     </Row>
                 </Container>
-                <hr/>
+                <hr />
             </div>
-            </CustomScroll>
-            </flexibleHeightElement>
         </div>
     )
 };
