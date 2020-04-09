@@ -33,7 +33,6 @@ const Home = () => {
         contenido: {
             width: '100%',
             height: '90vh',
-            boxShadow: '0 0 20px #aa9425',
             margin: '5px',
             display: 'flex',
             alignItems: 'center',
@@ -44,6 +43,12 @@ const Home = () => {
         }
     }
     return (
+        <>
+        <Container className="d-flex justify-content-between" style={styles.container}>
+            <Row style={styles.col}>
+
+            </Row>
+        </Container>
         <Container fluid={true} className="d-flex justify-content-between" style={styles.container}>
             <Row style={styles.col}>
                 <Col style={styles.row}>
@@ -60,21 +65,17 @@ const Home = () => {
                 </Col>
                 <Col style={styles.row}>
                     <div style={styles.contenido}>
-                        
-                                <Switch>
-                                <Route exact path="/">
-                                    <Entrada />
-                                </Route>
-                                <Route exact path="/datos">
-                                    <Datos />
-                                </Route>
-                                <Route exact path="/technical-full-stack">
-                                
-                                        <Technical />
-                                    
-                                </Route>
-                                </Switch>
-                            
+                        <Switch>
+                            <Route exact path="/">
+                                <Entrada />
+                            </Route>
+                            <Route exact path="/datos">
+                                <Datos />
+                            </Route>
+                            <Route exact path="/technical-full-stack">
+                                <Technical />
+                            </Route>
+                        </Switch>
                     </div>
                 </Col>
             </Row>
@@ -89,6 +90,8 @@ const Home = () => {
             </div>
             */}
         </Container>
+        </>
+        
         
     )
 }
