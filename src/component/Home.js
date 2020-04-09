@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Route, Switch } from "react-router-dom";
-
 import Menu from './Menu';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
@@ -21,14 +20,15 @@ const Home = () => {
     }
     const styles = {
         container: {
-            height: '100vh',
-            alignItems: 'center'
+            alignItems: 'center',
+            margin: '0',
+            padding: '0'
         },
         col: {
-            
+
         },
         row: {
-            
+
         },
         contenido: {
             width: '100%',
@@ -44,27 +44,52 @@ const Home = () => {
     }
     return (
         <>
-        <Container className="d-flex justify-content-between" style={styles.container}>
-            <Row style={styles.col}>
-
-            </Row>
-        </Container>
-        <Container fluid={true} className="d-flex justify-content-between" style={styles.container}>
-            <Row style={styles.col}>
-                <Col style={styles.row}>
-                    <div style={styles.contenido}>
-                        <div className="picture miab axel">
-                            <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
+            <Container fluid={true} className="d-flex" style={styles.container}>
+                <Row>
+                    <Col sm={12} style={{ background: '#f2f2f2', padding: '0.3em' }}></Col>
+                </Row>
+            </Container>
+            <Container fluid={true} className="d-flex" style={styles.container}>
+                <Row>
+                    <Col sm={2} style={{ background: '#111111' }}></Col>
+                    <Col sm={6} style={{ background: '#f2f2f2' }}>
+                        <Link to="/datos">
+                            <h1 style={{ fontSize: '1.9em', padding: '40px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
+                        </Link>
+                        <h2 style={{ fontSize: '0.9em', paddingBottom: '40px', textAlign: 'left', fontWeight: 'bold' }}>Full Stack Developer</h2>
+                    </Col>
+                    <Col sm={4} style={{ background: '#111111', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center' }}>
+                        <a href="//twitter.com/axelobscura?lang=en" target="_blank">
+                            <p className="redes"><i class='lni lni-twitter-filled'></i> | @axelobscura</p>
+                        </a>
+                        <a href="//mx.linkedin.com/in/axelobscura" target="_blank">
+                            <p className="redes"><i class='lni lni-linkedin'></i> | /in/axelobscura</p>
+                        </a>
+                        <a href="//github.com/axelobscura/" target="_blank">
+                            <p className="redes"><i class='lni lni-github'></i> | /axelobscura</p>
+                        </a>
+                    </Col>
+                </Row>
+            </Container>
+            <Container fluid={true} className="d-flex" style={styles.container}>
+                <Row className="colProfile">
+                    <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
+                        <h1>PROFILE<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-user'></i></h1>
+                        <div className="d-flex justify-content-between">
+                            <div>
+                                <div className="picture miab axel">
+                                    <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
+                                </div>
+                            </div>
+                            <div>
+                                <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 15 years of experience designing and developing backend architectures, decoupled and n-tier frontend web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, SQL, NodeJS, Express, PostgressSQL, MongoDB, ReactJS, Angular, VueJS, NextJS</b>.</p>
+                            </div>
                         </div>
-                        <Link to="/datos"><h1>Senior Full Stack Developer</h1></Link>
-                        <h2>M.A.V. Axel Laurent Obscura Sarzotti</h2>
-                        <p>Coyoacán, México</p>
-                        <i className="lni-angle-double-right" onClick={accion}></i>
-                        <Menu />
-                    </div>
-                </Col>
-                <Col style={styles.row}>
-                    <div style={styles.contenido}>
+                        <h1 className="mt-3">EDUCATION<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-home'></i></h1>
+                        <h1 className="mt-3">SKILLS<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-bi-cycle'></i></h1>
+                        <h1 className="mt-3">WORK EXPERIENCE<i class='lni lni-chevron-right flecha'></i> <i class='lni lni-cog'></i></h1>
+                    </Col>
+                    <Col sm={8} style={{ background: '#f4f4f4', padding: '0.7em' }}>
                         <Switch>
                             <Route exact path="/">
                                 <Entrada />
@@ -76,23 +101,13 @@ const Home = () => {
                                 <Technical />
                             </Route>
                         </Switch>
-                    </div>
-                </Col>
-            </Row>
-            {/* 
-            <div className='green-column' style={{background: `url(${imagen})`, backgroundSize: 'cover', backgroundPosition: 'center center', backgroundRepeat: 'no-repeat', filter: 'grayscale(100%)'}}>
-                <div className="home">
-                    <Link to="/datos"><h1>Full Stack Developer</h1></Link>
-                    <h2>Axel Laurent Obscura Sarzotti</h2>
-                    <p>Coyoacán, México</p>
-                    <i className="lni-angle-double-right" onClick={accion}></i>
-                </div>
-            </div>
-            */}
-        </Container>
+                    </Col>
+                </Row>
+            </Container>
+
         </>
-        
-        
+
+
     )
 }
 

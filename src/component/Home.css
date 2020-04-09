@@ -6,14 +6,17 @@
 .column.contenido h1 {
     color: #000;
     font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .column.contenido h2 {
     color: #222;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .column.contenido p {
     color: #444;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .lni-angle-double-right {
@@ -45,4 +48,51 @@
 .technical ul li ul li, .technical ul li ul li p {
     margin: 0;
     padding: 0;
+}
+
+p.redes {
+    color: #fff !important;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: 100;
+    padding-left: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.colProfile h1 {
+    font-size: 1em !important;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+.colProfile h1 i.lni {
+    position: relative;
+    float: right;
+    right: 0px;
+    padding-top: 3px;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+.colProfile h1 i.lni:hover {
+    background: red;
+    color: #fff;
+}
+.colProfile p {
+    font-size: 0.5em !important;
+    font-weight: 100;
+    text-align: justify;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.flecha {
+    padding: 0;
+    margin: 0;
+    padding: 7px !important;
+    margin-top: -5px;
+    border: 1px solid #fff;
+    margin-left: 10px;
 }
