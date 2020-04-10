@@ -8,9 +8,7 @@ import Entrada from './Entrada';
 import Technical from './Technical';
 import { Link } from "react-router-dom";
 import './Home.css';
-import datos from "../data/data2020";
-
-const secciones = datos.sections;
+import datosx from "../data/data2020";
 
 const Home = () => {
     const [seleccionado, setSeleccionado] = useState('PROFILE');
@@ -22,11 +20,20 @@ const Home = () => {
             setSeleccionado(clicked);
         }
     }
+    let datosSeccion = [];
+    datosx.sections.filter(item => {
+        if (item.name === seleccionado) {
+            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'datos': item.datos });
+        }
+    })
+    console.log(datosSeccion);
     return (
         <>
             <Container fluid={true} className="d-flex">
                 <Row>
-                    <Col sm={12} style={{ background: '#fff', padding: '0.3em' }}></Col>
+                    {datosSeccion.map((seccion, index) => (
+                        <Col sm={12} style={{ background: '#333', padding: '0', color: '#fff', fontSize: '0.5rem', color: '#fff', fontWeight: 'bold', textAlign: 'left' }}><h1 style={{ padding: '0', color: '#fff', fontWeight: 'bold' }}>{seccion.nombre}</h1></Col>
+                    ))}
                 </Row>
             </Container>
             <Container fluid={true} className="d-flex">
@@ -54,7 +61,7 @@ const Home = () => {
             <Container fluid={true} className="d-flex">
                 <Row className="colProfile">
                     <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
-                        {secciones.map((seccion, i) => (
+                        {datosx.sections.map((seccion, i) => (
                             <Link to="/datos" key={i}>
                                 <h1>{seccion.name}<i className={`lni lni-chevron-right flecha ${seleccionado === seccion.name ? 'seleccionado' : 'noSeleccionado'}`} onClick={sayHello} id={seccion.name}></i> <i className={`lni ${seccion.icono}`}></i>
                                 </h1>
@@ -67,7 +74,7 @@ const Home = () => {
                                 <Entrada />
                             </Route>
                             <Route exact path="/datos">
-                                <Datos titulo={seleccionado} datos={secciones} />
+                                <Datos titulo={seleccionado} datos={datosx.sections} />
                             </Route>
                             <Route exact path="/technical-full-stack">
                                 <Technical />
