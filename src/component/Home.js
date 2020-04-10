@@ -8,17 +8,18 @@ import Entrada from './Entrada';
 import Technical from './Technical';
 import { Link } from "react-router-dom";
 import './Home.css';
-import profile from '../profile.jpeg';
+import datos from "../data/data2020";
+
+const secciones = datos.sections;
 
 const Home = () => {
-    const [seleccionado, setSeleccionado] = useState('noSeleccionado')
-    const secciones = ['POFILE', 'EDUCATION', 'SKILLS', 'EXPERIENCE', 'PORTFOLIO', 'CONTACT'];
+    const [seleccionado, setSeleccionado] = useState('PROFILE');
     function sayHello(e) {
-        e.target.classList.remove('seleccionado');
-        if (e.target.classList.contains('seleccionado')) {
-            e.target.classList.remove('seleccionado');
+        const clicked = e.target.id;
+        if (seleccionado === clicked) {
+            setSeleccionado('');
         } else {
-            e.target.classList.add('seleccionado');
+            setSeleccionado(clicked);
         }
     }
     return (
@@ -54,19 +55,19 @@ const Home = () => {
                 <Row className="colProfile">
                     <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
                         {secciones.map((seccion, i) => (
-                            <div key={i}>
-                                <h1>{seccion}<i className={`lni lni-chevron-right flecha ${seleccionado}`} onClick={sayHello}></i> <i className='lni lni-user'></i>
+                            <Link to="/datos" key={i}>
+                                <h1>{seccion.name}<i className={`lni lni-chevron-right flecha ${seleccionado === seccion.name ? 'seleccionado' : 'noSeleccionado'}`} onClick={sayHello} id={seccion.name}></i> <i className={`lni ${seccion.icono}`}></i>
                                 </h1>
-                            </div>
+                            </Link>
                         ))}
                     </Col>
-                    <Col sm={8} style={{ background: '#fff', padding: '0.7em' }}>
+                    <Col sm={8} style={{ background: '#fff', padding: '0' }}>
                         <Switch>
                             <Route exact path="/">
                                 <Entrada />
                             </Route>
                             <Route exact path="/datos">
-                                <Datos />
+                                <Datos titulo={seleccionado} datos={secciones} />
                             </Route>
                             <Route exact path="/technical-full-stack">
                                 <Technical />

@@ -5,27 +5,36 @@ import Col from 'react-bootstrap/Col';
 import Noticias from './Noticias';
 import data from "../data/data";
 import './Datos.css';
+import profileImage from '../profile.jpeg';
+
 const profile = data.profile;
-const Datos = () => {
+
+const Datos = (props) => {
     const detalles = [];
-    {/* 
-    profile.map(p => {
-        detalles.push(p.summaryDetails)
+    console.log(props.datos);
+    let datosSeccion = [];
+    props.datos.filter(item => {
+        if (item.name === props.titulo) {
+            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'datos': item.datos });
+        }
     })
-    */}
+    console.log(datosSeccion);
     return (
-        <Container fluid={true} style={{ margin: '0', padding: '0' }}>
+        <Container fluid={true} style={{ margin: '0', padding: '0.2em' }}>
             <Row>
-                <Col sm={12} style={{ padding: '0.3em' }}>
-                    <h1><i className='lni lni-home'></i> DATOS</h1>
+                <Col sm={12} style={{ padding: '0.3em', borderLeft: '2px solid red' }}>
+                    {datosSeccion.map((seccion, index) => (
+                        <div>
+                            <h1 key={index}><i className={`lni ${seccion.icono}`}></i> {seccion.nombre}</h1>
+                            <p className="p-0 m-2"><b>{seccion.datos}</b>.</p>
+                        </div>
+                    ))}
+
                     <div className="d-flex justify-content-center align-items-center">
                         <div>
                             <div className="picture miab axel">
-                                <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
+                                <img src={profileImage} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
                             </div>
-                        </div>
-                        <div>
-                            <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 16 years of experience designing and developing backend architectures, decoupled and entier back to front web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, Laravel, Cake, SQL, PostgressSQL, MongoDB, NodeJS, Express, ReactJS, Angular, VueJS, NextJS, PWA, Wordpress, Joomla, Drupal, Magento</b>.</p>
                         </div>
                     </div>
                     <div className="datos">
