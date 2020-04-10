@@ -25,7 +25,11 @@ const Datos = (props) => {
                 <Col sm={12} style={{ padding: '0.3em', borderLeft: '2px solid red' }}>
                     {datosSeccion.map((seccion, index) => (
                         <div>
-                            <h1 key={index}><i className={`lni ${seccion.icono}`}></i> {seccion.nombre}</h1>
+                            <h1 key={index} style={{
+                                background: 'red',
+                                color: '#fff',
+                                padding: '5px'
+                            }}><i className={`lni ${seccion.icono}`}></i> {seccion.nombre}</h1>
                             <p className="p-0 m-2"><b>{seccion.datos}</b>.</p>
                         </div>
                     ))}

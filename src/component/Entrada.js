@@ -9,9 +9,9 @@ const profile = data.profile;
 
 const Entrada = () => {
     return (
-        <Container fluid={true} style={{ margin: '0', padding: '0' }}>
+        <Container fluid={true} style={{ margin: '0', padding: '0.2em' }}>
             <Row>
-                <Col sm={6} style={{ padding: '0.3em' }}>
+                <Col sm={6} style={{ padding: '0.3em', borderLeft: '2px solid red' }}>
                     <h1><i className='lni lni-user'></i> PERSONAL INFO</h1>
                     <p className="p-0 m-2">Name: Axel Laurent Obscura Sarzotti</p>
                     <p className="p-0 m-2">Role: Full Stack Developer</p>
