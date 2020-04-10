@@ -12,9 +12,14 @@ import profile from '../profile.jpeg';
 
 const Home = () => {
     const [seleccionado, setSeleccionado] = useState('noSeleccionado')
-    function sayHello(dato) {
-        console.log(dato);
-        setSeleccionado('seleccionado');
+    const secciones = ['POFILE', 'EDUCATION', 'SKILLS', 'EXPERIENCE', 'PORTFOLIO', 'CONTACT'];
+    function sayHello(e) {
+        e.target.classList.remove('seleccionado');
+        if (e.target.classList.contains('seleccionado')) {
+            e.target.classList.remove('seleccionado');
+        } else {
+            e.target.classList.add('seleccionado');
+        }
     }
     return (
         <>
@@ -48,40 +53,12 @@ const Home = () => {
             <Container fluid={true} className="d-flex">
                 <Row className="colProfile">
                     <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
-                        <Link to="/">
-                            <h1 onClick={() => sayHello('profile')}>PROFILE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-user'></i>
-                            </h1>
-                        </Link>
-                        <div className="d-flex justify-content-center align-items-center">
-                            <div>
-                                <div className="picture miab axel">
-                                    <img src={profile} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
-                                </div>
+                        {secciones.map((seccion, i) => (
+                            <div key={i}>
+                                <h1>{seccion}<i className={`lni lni-chevron-right flecha ${seleccionado}`} onClick={sayHello}></i> <i className='lni lni-user'></i>
+                                </h1>
                             </div>
-                            <div>
-                                <p className="p-0 m-2"><b>Senior Full Stack Web Developer</b> with 16 years of experience designing and developing backend architectures, decoupled and entier back to front web applications using <b>HTML, CSS, JavaScript, JQuery, AJAX, JSON, API, XML, PYTHON, PHP, Laravel, Cake, SQL, PostgressSQL, MongoDB, NodeJS, Express, ReactJS, Angular, VueJS, NextJS, PWA, Wordpress, Joomla, Drupal, Magento</b>.</p>
-                            </div>
-                        </div>
-                        <Link to="/datos">
-                            <h1 className="mt-3" onClick={() => sayHello('education')}>EDUCATION<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-home'></i>
-                            </h1>
-                        </Link>
-                        <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello('skills')}>SKILLS<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-bi-cycle'></i>
-                            </h1>
-                        </Link>
-                        <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello('work')}>WORK EXPERIENCE<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-cog'></i>
-                            </h1>
-                        </Link>
-                        <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello('portfolio')}>PORTFOLIO<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-brush-alt'></i>
-                            </h1>
-                        </Link>
-                        <Link to="/technical-full-stack">
-                            <h1 className="mt-3" onClick={() => sayHello('contact   ')}>CONTACT<i className={`lni lni-chevron-right flecha ${seleccionado}`}></i> <i className='lni lni-telegram'></i>
-                            </h1>
-                        </Link>
+                        ))}
                     </Col>
                     <Col sm={8} style={{ background: '#fff', padding: '0.7em' }}>
                         <Switch>
