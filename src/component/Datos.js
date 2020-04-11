@@ -2,9 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Noticias from './Noticias';
 import './Datos.css';
-import profileImage from '../profile.jpeg';
 
 
 const Datos = (props) => {
@@ -13,7 +11,7 @@ const Datos = (props) => {
     let datosSeccion = [];
     props.datos.filter(item => {
         if (item.name === props.titulo) {
-            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'color': item.color, 'datos': item.datos });
+            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'color': item.color, 'datos': item.datos, 'imagen': item.imagen });
         }
     })
     //console.log(datosSeccion);
@@ -28,20 +26,16 @@ const Datos = (props) => {
                                 color: '#fff',
                                 padding: '13px'
                             }}><i className={`lni ${seccion.icono}`}></i> {seccion.nombre}</h1>
-                            <p className="p-0 m-2"><b>{seccion.datos}</b>.</p>
+                            <h2 style={{ textAlign: 'left', padding: '10px', borderBottom: '1px solid #dedede', fontSize: '1.5rem' }}>{seccion.nombre}</h2>
+                            <div style={{ display: 'flex', padding: '10px 20px' }}>
+                                <div className="picture miab axel" style={{ minWidth: '100px' }}>
+                                    <img src={`/images/${seccion.imagen}`} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
+                                </div>
+                                <p className="p-0 m-2"><b>{seccion.datos}</b>.</p>
+                            </div>
+
                         </div>
                     ))}
-
-                    <div className="d-flex justify-content-center align-items-center">
-                        <div>
-                            <div className="picture miab axel">
-                                <img src={profileImage} alt="Axel Laurent Obscura Sarzotti" title="Axel Laurent Obscura Sarzotti" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="datos">
-
-                    </div>
                 </Col>
             </Row>
 

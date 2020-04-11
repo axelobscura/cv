@@ -21,7 +21,7 @@ const Home = () => {
     let datosSeccion = [];
     datosx.sections.filter(item => {
         if (item.name === seleccionado) {
-            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'color': item.color, 'datos': item.datos });
+            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'color': item.color, 'datos': item.datos, 'imagen': item.imagen });
 
         };
 
@@ -51,7 +51,18 @@ const Home = () => {
             </Container>
             <Container fluid={true} className="d-flex">
                 <Row>
-                    <Col sm={2} style={{ background: `${color}` }}></Col>
+                    <Col sm={2} style={{ background: `${color}` }}>
+                        {datosSeccion.map((seccion, index) => (
+                            <h1 key={index} style={{
+                                fontWeight: '900',
+                                color: '#fff',
+                                position: 'absolute',
+                                right: '1px',
+                                top: '-10px',
+                                fontSize: '5em'
+                            }}>{seccion.nombre[0]}{seccion.nombre[1]}</h1>
+                        ))}
+                    </Col>
                     <Col sm={6} style={{ background: '#f2f2f2' }}>
                         <Link to="/datos">
                             <h1 style={{ fontSize: '1em', padding: '20px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
