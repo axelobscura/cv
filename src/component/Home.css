@@ -107,7 +107,7 @@ p.redes {
 }
 .colProfile h1 i.lni.flecha.seleccionado {
     background: red;
-    color: #fff;
+    color: #fff !important;
 }
 .colProfile p {
     font-size: 0.5em !important;
@@ -124,4 +124,7 @@ p.redes {
     margin-top: -5px;
     border: 1px solid #fff;
     margin-left: 10px;
+}
+.column.contenido h1.seleccionadoText {
+    color: red !important;
 }

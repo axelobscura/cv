@@ -17,13 +17,13 @@ const Noticias = (props) => {
     return (
         <div>
             <Ticker
-                offset="10%"
+                offset="2%"
                 move={true}
                 speed={props.speed}
                 mode='smooth'
             >
                 {(index) => (
-                    <props.tag style={{ whiteSpace: "nowrap", margin: '0', padding: '0' }}> <i className="lni-chevron-right" style={{ marginLeft: '10px', color: 'red' }}></i> {quotes[rand(0, quotes.length - 1)]} </props.tag>
+                    <props.tag style={{ whiteSpace: "nowrap", margin: '0', padding: '0' }}> <i className="lni-chevron-right" style={{ marginLeft: '3px', color: 'red' }}></i> {quotes[rand(0, quotes.length - 1)]} </props.tag>
                 )}
             </Ticker>
         </div>
