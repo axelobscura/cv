@@ -58,7 +58,7 @@ const Home = () => {
                                 color: '#fff',
                                 position: 'absolute',
                                 right: '1px',
-                                top: '-10px',
+                                top: '-15px',
                                 fontSize: '5em'
                             }}>{seccion.nombre[0]}{seccion.nombre[1]}</h1>
                         ))}
