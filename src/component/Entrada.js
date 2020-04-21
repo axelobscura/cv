@@ -13,7 +13,7 @@ const Entrada = () => {
             <Row>
                 <Col sm={6} style={{ padding: '0.3em', borderLeft: '2px solid red' }}>
                     <h1><i className='lni lni-user'></i> PERSONAL INFO</h1>
-                    <p className="p-0 m-2">Name: Axel Laurent Obscura Sarzotti</p>
+                    <h2 className="p-0 m-2" style={{ textAlign: 'left' }}>Axel Laurent Obscura Sarzotti</h2>
                     <p className="p-0 m-2">Role: Full Stack Developer</p>
                     <p className="p-0 m-2">Address: México</p>
                     <p className="p-0 m-2">Phone: 52 1 55 3220 6321</p>

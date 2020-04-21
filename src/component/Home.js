@@ -65,7 +65,7 @@ const Home = () => {
                     </Col>
                     <Col sm={6} style={{ background: '#f2f2f2' }}>
                         <Link to="/datos">
-                            <h1 style={{ fontSize: '1em', padding: '20px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
+                            <h1 style={{ fontSize: '2em', padding: '20px 0 0 0', textAlign: 'left', fontWeight: '100' }}>Axel Laurent<br />Obscura Sarzotti</h1>
                         </Link>
                         <h2 style={{ fontSize: '0.9em', paddingBottom: '20px', textAlign: 'left', fontWeight: 'bold' }}>Full Stack Developer</h2>
                     </Col>
