@@ -49,7 +49,7 @@ const Home = () => {
                     ))}
                 </Row>
             </Container>
-            <Container fluid={true} className="d-flex">
+            <Container fluid={true} className="d-flex" style={{ minWidth: '100vh' }}>
                 <Row>
                     <Col sm={2} style={{ background: `${color}` }}>
                         {datosSeccion.map((seccion, index) => (
@@ -103,7 +103,7 @@ const Home = () => {
                             </Link>
                         ))}
                     </Col>
-                    <Col sm={8} style={{ background: '#fff', padding: '0' }}>
+                    <Col sm={8} style={{ background: '#fff', padding: '0', minHeight: '100vh' }}>
                         <Switch>
                             <Route exact path="/">
                                 <Entrada />
