@@ -106,7 +106,7 @@ const Home = () => {
                     <Col sm={8} style={{ background: '#fff', padding: '0', minHeight: '100vh' }}>
                         <Switch>
                             <Route exact path="/">
-                                <Entrada />
+                                <Entrada datos={datosx.sections} />
                             </Route>
                             <Route exact path="/datos">
                                 <Datos titulo={seleccionado} datos={datosx.sections} />
