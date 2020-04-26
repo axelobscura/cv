@@ -11,7 +11,6 @@ function App() {
           <div className='row'>
             <div className='column contenido'>
               <Home />
-              <h1>hola soyv axel</h1>
             </div>
           </div>
         </div>

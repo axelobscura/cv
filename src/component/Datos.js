@@ -11,21 +11,29 @@ const Datos = (props) => {
     let datosSeccion = [];
     props.datos.filter(item => {
         if (item.name === props.titulo) {
-            datosSeccion.push({ 'nombre': item.name, 'icono': item.icono, 'color': item.color, 'datos': item.datos, 'imagen': item.imagen });
+            datosSeccion.push({
+                'nombre': item.name,
+                'icono': item.icono,
+                'color': item.color,
+                'datos': item.datos,
+                'imagen': item.imagen
+            });
         }
     })
     //console.log(datosSeccion);
     return (
         <Container fluid={true} style={{ margin: '0', padding: '0' }}>
             <Row>
-                <Col sm={12} style={{ padding: '0', borderLeft: '2px solid red' }}>
+                <Col sm={12} style={{ padding: '0', borderLeft: '12px solid red', minHeight: '100vh' }}>
                     {datosSeccion.map((seccion, index) => (
                         <div key={index}>
                             <h1 key={index} style={{
                                 background: `${seccion.color}`,
                                 color: '#fff',
                                 padding: '13px'
-                            }}><i className={`lni ${seccion.icono}`}></i> {seccion.nombre}</h1>
+                            }}>
+                                <i className={`lni ${seccion.icono}`}></i> {seccion.nombre}
+                            </h1>
                             <h2 style={{ textAlign: 'left', padding: '10px', borderBottom: '1px solid #dedede', fontSize: '1.5rem' }}>{seccion.nombre}</h2>
                             <div style={{ display: 'flex', padding: '10px 20px' }}>
                                 <div className="picture miab axel" style={{ minWidth: '100px' }}>
