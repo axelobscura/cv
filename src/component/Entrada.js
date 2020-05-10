@@ -7,10 +7,9 @@ import './Entrada.css';
 
 const profile = data.profile;
 
-const Entrada = (props) => {
-    const { datos } = props;
-    console.log('Estos son los adtos: ' + datos.profile);
+const Entrada = () => {
     let elNombre = profile.map(dato => dato.name);
+    let elRole = profile.map(dato => dato.role);
     return (
         <Container fluid={true} style={{ margin: '0', padding: '0em' }}>
             <Row>
@@ -19,7 +18,7 @@ const Entrada = (props) => {
                     <h4 className="p-0 m-2 titulo">
                         <i className="lni lni-user"></i> {elNombre}
                     </h4>
-                    <h4 className="p-0 m-2 titulo"><i className="lni lni-pencil"></i> Full Stack Developer</h4>
+                    <h4 className="p-0 m-2 titulo"><i className="lni lni-pencil"></i> {elRole}</h4>
                     <h4 className="p-0 m-2 titulo"><i className="lni lni-map"></i> México</h4>
                     <h4 className="p-0 m-2 titulo"><i className="lni lni-phone"></i> 5255 3220 6321</h4>
                     <h4 className="p-0 m-2 titulo"><i className="lni lni-envelope"></i> axosar@gmail.com</h4>
