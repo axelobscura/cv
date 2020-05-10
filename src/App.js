@@ -5,19 +5,16 @@ import './App.css';
 import Home from './component/Home';
 function App() {
   return (
-    <HashRouter basename='/'>
-      <div className="App">
-        <div className='wrapperHome'>
-          <div className='row'>
-            <div className='column contenido'>
-              <Home />
-            </div>
+    <div className="App">
+      <div className='wrapperHome'>
+        <div className='row'>
+          <div className='column contenido'>
+            <Home />
           </div>
         </div>
-
       </div>
-    </HashRouter>
 
+    </div>
   );
 }
 
