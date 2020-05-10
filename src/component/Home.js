@@ -51,7 +51,7 @@ const Home = () => {
             </Container>
             <Container fluid={true} className="d-flex" style={{ minWidth: '100vh' }}>
                 <Row>
-                    <Col sm={2} style={{ background: `${color}` }}>
+                    <Col sm={3} style={{ background: `${color}` }}>
                         {datosSeccion.map((seccion, index) => (
                             <h1 key={index} style={{
                                 fontWeight: '900',
@@ -69,7 +69,7 @@ const Home = () => {
                         </Link>
                         <h2 style={{ fontSize: '0.9em', paddingBottom: '20px', textAlign: 'left', fontWeight: 'bold' }}>Full Stack Developer in México</h2>
                     </Col>
-                    <Col sm={4} style={{ background: '#111111', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center' }}>
+                    <Col sm={3} style={{ background: '#111111', display: 'flex', flexDirection: 'column', alignContent: 'center', justifyContent: 'center' }}>
                         <a href="//twitter.com/axelobscura?lang=en" target="_blank">
                             <p className="redes"><i className='lni lni-twitter-filled'></i> | @axelobscura</p>
                         </a>
@@ -95,7 +95,7 @@ const Home = () => {
             </Container>
             <Container fluid={true} className="d-flex">
                 <Row className="colProfile">
-                    <Col sm={4} style={{ background: '#dedede', padding: '0.7em' }}>
+                    <Col sm={3} style={{ background: '#dedede', padding: '0.7em' }}>
                         {datosx.sections.map((seccion, index) => (
                             <Link to="/datos" key={index}>
                                 <h1 className={`${seleccionado === seccion.name ? 'seleccionadoText' : 'noSeleccionadoText'}`}>{seccion.name}<i className={`lni lni-chevron-right flecha ${seleccionado === seccion.name ? 'seleccionado' : 'noSeleccionado'}`} onClick={sayHello} id={seccion.name} color={seccion.color}></i> <i className={`lni ${seccion.icono}`}></i>
@@ -103,7 +103,7 @@ const Home = () => {
                             </Link>
                         ))}
                     </Col>
-                    <Col sm={8} style={{ background: '#fff', padding: '0', minHeight: '100vh' }}>
+                    <Col sm={9} style={{ background: '#fff', padding: '0', minHeight: '100vh' }}>
                         <Switch>
                             <Route exact path="/">
                                 <Entrada datos={datosx.sections} />

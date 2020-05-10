@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Datos.css';
 
-
 const Datos = (props) => {
     const detalles = [];
     //console.log(props.datos);
