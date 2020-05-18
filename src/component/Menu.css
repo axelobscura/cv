@@ -72,3 +72,8 @@ i.material-icons {
     margin-top: -5px;
     border-radius: 50%;
 }
+
+.menucv span.material-icons {
+    position: absolute;
+    right: 0;
+}

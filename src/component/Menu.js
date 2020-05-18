@@ -23,13 +23,25 @@ const Menu = () => {
                     </Col>
                 </Row>
             </Container>
-            <Nav defaultActiveKey="/" className="flex-column">
-                <Nav.Link href="/professional-summary" eventKey="active">Professional Summary</Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">Technical Summary</Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">Education</Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">Languages</Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">Professional Experience</Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">Contact</Nav.Link>
+            <Nav defaultActiveKey="/" className="flex-column menucv">
+                <Nav.Link href="/professional-summary" eventKey="active">
+                    <span className="material-icons">keyboard_arrow_right</span> Professional Summary
+                </Nav.Link>
+                <Nav.Link href="/datos" eventKey="activo">
+                    <span className="material-icons">keyboard_arrow_right</span> Technical Summary
+                </Nav.Link>
+                <Nav.Link href="/datos" eventKey="activo">
+                    <span className="material-icons">keyboard_arrow_right</span> Education
+                </Nav.Link>
+                <Nav.Link href="/datos" eventKey="activo">
+                    <span className="material-icons">keyboard_arrow_right</span> Languages
+                </Nav.Link>
+                <Nav.Link href="/datos" eventKey="activo">
+                    <span className="material-icons">keyboard_arrow_right</span> Professional Experience
+                </Nav.Link>
+                <Nav.Link href="/datos" eventKey="activo">
+                    <span className="material-icons">keyboard_arrow_right</span> Contact
+                </Nav.Link>
             </Nav>
             <Container className="redessociales">
                 <Row style={{ display: 'none' }}>

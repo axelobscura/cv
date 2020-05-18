@@ -1,0 +1,20 @@
+.intro {
+    background-color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.intro p {
+    text-align: center;
+    padding: 0 90px;
+    font-weight: 100;
+    font-size: 1rem;
+}
