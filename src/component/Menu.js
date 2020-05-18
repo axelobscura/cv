@@ -25,7 +25,7 @@ const Menu = () => {
                 </Row>
             </Container>
             <Nav defaultActiveKey="/" className="flex-column">
-                <Nav.Link href="/professional-summary" eventKey="activo">Professional Summary</Nav.Link>
+                <Nav.Link href="/professional-summary" eventKey="active">Professional Summary</Nav.Link>
                 <Nav.Link href="/datos" eventKey="activo">Technical Summary</Nav.Link>
                 <Nav.Link href="/datos" eventKey="activo">Education</Nav.Link>
                 <Nav.Link href="/datos" eventKey="activo">Languages</Nav.Link>
