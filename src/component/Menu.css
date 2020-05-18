@@ -1,23 +1,74 @@
-.menu ul {
-    list-style: none;
+.menu {
+    width: 100%;
+    background: #2d3e50;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .datos.personales h1 {
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding: 10px 0;
+    padding-bottom: 0;
+}
+
+.menu .datos.personales h2 {
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 2px 0;
+    color: #a3aeba;
+    padding-bottom: 0;
+    border-bottom: 1px solid #2d3e50;
+}
+
+.menu .datos.personales img {
+    border-radius: 50%;
+    max-width: 80px;
+    width: 80px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.menu .flex-column.nav {
+    text-align: left;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.menu .flex-column.nav a {
+    font-size: 0.9rem;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    background: #29333e;
+    padding: 10px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+    transition: all 1s;;
 }
 
-.menu ul li {
+.menu .flex-column.nav a:hover {
+    background: #566e86;
+}
+
+.menu .flex-column.nav a.activo {
+    background-color: gold;
+}
+
+.menu p {
+    padding: 0 10px;
+    font-size: 0.9rem;
+    padding-left: 20px;
+}
+
+i.material-icons {
     position: relative;
     float: left;
-
-}
-.menu ul li a {
-    text-decoration: none;
-    color: #000;
-    transition: all 1s;
-    font-weight: 100;
-    margin: 10px;
-}
-
-.menu a:hover {
-    color: #cccccc;
+    border: 1px solid #000;
+    padding: 4px;
+    margin-right: 5px;
+    margin-top: -5px;
+    border-radius: 50%;
 }
