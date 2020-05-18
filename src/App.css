@@ -87,3 +87,20 @@
 .wrapperHome .green-column a {
   color: #000000;
 }
+
+.btn {
+  background-color: gold;
+  color: #000000;
+  text-align: center;
+  padding: 10px 25px;
+  border-radius: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 15px 0;
+  transition: all 1s;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: gold;
+}
