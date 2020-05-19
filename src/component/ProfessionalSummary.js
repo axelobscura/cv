@@ -9,7 +9,7 @@ export default () => (
         <Row>
             <Col>
                 <hr />
-                <h1><span class="material-icons">location_searching</span> Professional Summary</h1>
+                <h1><span className="material-icons">location_searching</span> Professional Summary</h1>
                 <hr />
                 <p>Full stack JavaScript developer with hands on experience of designing, developing and maintaining web as well as mobile applications. Possesses diverse experience of creating multiple highly scalable applications <b>using different tech stacks</b>. Adept at understanding the requirements of the clients and delivering projects accordingly. Demonstrates the capability of maintaining code by fixing bugs as well as conducting end to end testing. Highly skilled at collaborating with team members to ship beautiful products within deadlines. Looking forward to applying the acquired gamut of skills in a challenging role.</p>
                 <hr />
@@ -18,41 +18,41 @@ export default () => (
         </Row>
         <Row className="iconosDev">
             <Col sm={3}>
-                <h1><span class="material-icons">brightness_high</span> Skills</h1>
+                <h1><span className="material-icons">brightness_high</span> Skills</h1>
             </Col>
             <Col sm={9}>
-                <i class="devicon-javascript-plain"></i>
-                <i class="devicon-typescript-plain"></i>
-                <i class="devicon-react-original"></i>
-                <i class="devicon-angularjs-plain"></i>
-                <i class="devicon-vuejs-plain"></i>
-                <i class="devicon-git-plain"></i>
-                <i class="devicon-jquery-plain"></i>
-                <i class="devicon-html5-plain"></i>
-                <i class="devicon-jasmine-plain"></i>
-                <i class="devicon-bootstrap-plain"></i>
-                <i class="devicon-css3-plain"></i>
-                <i class="devicon-nodejs-plain"></i>
-                <i class="devicon-express-original"></i>
-                <i class="devicon-php-plain"></i>
-                <i class="devicon-trello-plain"></i>
-                <i class="devicon-visualstudio-plain"></i>
-                <i class="devicon-webpack-plain"></i>
-                <i class="devicon-wordpress-plain"></i>
-                <i class="devicon-zend-plain"></i>
-                <i class="devicon-mocha-plain"></i>
-                <i class="devicon-laravel-plain"></i>
-                <i class="devicon-less-plain-wordmark"></i>
-                <i class="devicon-mongodb-plain"></i>
-                <i class="devicon-mysql-plain"></i>
-                <i class="devicon-sass-original"></i>
-                <i class="devicon-ssh-plain"></i>
+                <i className="devicon-javascript-plain"></i>
+                <i className="devicon-typescript-plain"></i>
+                <i className="devicon-react-original"></i>
+                <i className="devicon-angularjs-plain"></i>
+                <i className="devicon-vuejs-plain"></i>
+                <i className="devicon-git-plain"></i>
+                <i className="devicon-jquery-plain"></i>
+                <i className="devicon-html5-plain"></i>
+                <i className="devicon-jasmine-plain"></i>
+                <i className="devicon-bootstrap-plain"></i>
+                <i className="devicon-css3-plain"></i>
+                <i className="devicon-nodejs-plain"></i>
+                <i className="devicon-express-original"></i>
+                <i className="devicon-php-plain"></i>
+                <i className="devicon-trello-plain"></i>
+                <i className="devicon-visualstudio-plain"></i>
+                <i className="devicon-webpack-plain"></i>
+                <i className="devicon-wordpress-plain"></i>
+                <i className="devicon-zend-plain"></i>
+                <i className="devicon-mocha-plain"></i>
+                <i className="devicon-laravel-plain"></i>
+                <i className="devicon-less-plain-wordmark"></i>
+                <i className="devicon-mongodb-plain"></i>
+                <i className="devicon-mysql-plain"></i>
+                <i className="devicon-sass-original"></i>
+                <i className="devicon-ssh-plain"></i>
             </Col>
         </Row>
         <hr />
         <Row>
             <Col sm={3}>
-                <h2><span class="material-icons">keyboard_arrow_right</span> Front End</h2>
+                <h2><span className="material-icons">keyboard_arrow_right</span> Front End</h2>
                 <ul>
                     <li>Javascript [ES5/ES6]</li>
                     <li>Jquery, Ajax</li>
@@ -64,7 +64,7 @@ export default () => (
                 </ul>
             </Col>
             <Col sm={3}>
-                <h2><span class="material-icons">keyboard_arrow_right</span> Back End</h2>
+                <h2><span className="material-icons">keyboard_arrow_right</span> Back End</h2>
                 <ul>
                     <li>Node NPM</li>
                     <li>Express, Sails.js</li>
@@ -76,7 +76,7 @@ export default () => (
                 </ul>
             </Col>
             <Col sm={3}>
-                <h2><span class="material-icons">keyboard_arrow_right</span> Dev Ops</h2>
+                <h2><span className="material-icons">keyboard_arrow_right</span> Dev Ops</h2>
                 <ul>
                     <li>Elastik Beanstalk</li>
                     <li>EC2</li>
@@ -86,7 +86,7 @@ export default () => (
                 </ul>
             </Col>
             <Col sm={3}>
-                <h2><span class="material-icons">keyboard_arrow_right</span> Miscellaneous</h2>
+                <h2><span className="material-icons">keyboard_arrow_right</span> Miscellaneous</h2>
                 <ul>
                     <li>Git, Bitbucket</li>
                     <li>Test Driven Development</li>
@@ -100,7 +100,7 @@ export default () => (
         <Row>
             <Col>
                 <hr />
-                <h1><span class="material-icons">brightness_auto</span> Summary</h1>
+                <h1><span className="material-icons">brightness_auto</span> Summary</h1>
                 <hr />
             </Col>
         </Row>

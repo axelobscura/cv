@@ -8,7 +8,7 @@ import './App.css';
 import Menu from './component/Menu';
 import Intro from './component/Intro';
 import ProfessionalSummary from './component/ProfessionalSummary';
-
+import TecnicalSummary from './component/TechnicalSummary';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Intro} />
               <Route exact path="/professional-summary" component={ProfessionalSummary} />
+              <Route exact path="/technical-summary" component={TecnicalSummary} />
             </Switch>
           </Col>
         </Row>
