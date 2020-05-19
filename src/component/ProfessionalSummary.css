@@ -3,6 +3,15 @@
     color: #333333;
     font-weight: 900;
     padding: 10px 0;
+    font-size: 1.5rem;
+}
+
+.ps h2 {
+    text-align: left;
+    color: #555555;
+    font-weight: 900;
+    padding: 10px 0;
+    font-size: 1.3rem;
 }
 
 .ps p {
@@ -10,6 +19,30 @@
     color: #111;
     font-weight: 100;
     padding: 10px 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: justify;
+}
+
+.ps ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+    font-size: 0.8rem;
+    color: #333333;
+    list-style: square;
+    padding-left: 20px;
+}
+
+.ps .material-icons {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    float: left;
+    margin-top: -3px;
+    margin-right: 10px;
+    border: 1px solid #2C3E50;
+    color: #2C3E50;
+    padding: 3px;
+    border-radius: 50%;
 }

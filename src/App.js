@@ -15,10 +15,10 @@ function App() {
     <div className="App">
       <Container fluid>
         <Row>
-          <Col className="p-0 m-0">
+          <Col sm={2} xs={2} className="p-0 m-0">
             <Menu />
           </Col>
-          <Col sm={10} xs={12} className="p-0 m-0">
+          <Col sm={10} xs={10} className="p-0 m-0">
             <Switch>
               <Route exact path="/" component={Intro} />
               <Route exact path="/professional-summary" component={ProfessionalSummary} />

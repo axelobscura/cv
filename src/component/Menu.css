@@ -13,6 +13,8 @@
     font-weight: 900;
     padding: 10px 0;
     padding-bottom: 0;
+    text-align: center;
+    color: #ffffff;
 }
 
 .menu .datos.personales h2 {
@@ -22,6 +24,11 @@
     color: #a3aeba;
     padding-bottom: 0;
     border-bottom: 1px solid #2d3e50;
+    text-align: center;
+}
+
+.menu .datos.personales {
+    color: #ffffff;
 }
 
 .menu .datos.personales img {
@@ -59,8 +66,8 @@
 
 .menu p {
     padding: 0 10px;
-    font-size: 0.9rem;
-    padding-left: 20px;
+    font-size: 0.7rem;
+    color: #ffffff;
 }
 
 i.material-icons {
