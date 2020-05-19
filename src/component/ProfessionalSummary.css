@@ -46,3 +46,8 @@
     padding: 3px;
     border-radius: 50%;
 }
+
+.ps .iconosDev i {
+    color: #333333;
+    margin: 0 3px;
+}
