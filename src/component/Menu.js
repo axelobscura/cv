@@ -17,7 +17,7 @@ const Menu = () => {
                         <Nav.Link href="/" style={{ paddingLeft: '0' }}>
                             <img src="images/profile.jpeg" alt="Full Stack Developer" title="Full Stack Developer" />
                         </Nav.Link>
-                        <h1>Axel L.<br />Obscura Sarzotti</h1>
+                        <Link to="/"><h1>Axel L.<br />Obscura Sarzotti</h1></Link>
                         <h2>Full Stack Developer</h2>
                         <hr />
                         <p className="text-left"><i className="material-icons">call</i> (52)(55) 3220-6321</p>

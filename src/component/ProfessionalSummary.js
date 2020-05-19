@@ -68,5 +68,33 @@ export default () => (
                 </ul>
             </Col>
         </Row>
+        <Row>
+            <Col>
+                <hr />
+                <h1><span class="material-icons">brightness_auto</span> Summary</h1>
+                <hr />
+            </Col>
+        </Row>
+        <Row>
+            <Col sm={6}>
+                <ul>
+                    <li>+10 Years of software design experience in developing enterprise applications</li>
+                    <li>Experience in both <b>Client Side</b> and <b>Server Side</b> Programming</li>
+                    <li>Background in all phases of software engineering, including Analysis, Design, Coding, Testing and Implementation as well as <b>Agile</b> software development using Github</li>
+                    <li>Experience in <b>NodeJS</b> backend programming and <b>Object Oriented Javascript</b></li>
+                </ul>
+            </Col>
+            <Col sm={6}>
+                <ul>
+                    <li>Frontend Development Skills in <b>HTML/CSS/Javascript</b> and <b>Responsive Design</b></li>
+                    <li>Extensive experience building web apps with frameworks like <b>ReactJS, Angular +2 and VueJS</b></li>
+                    <li>PHP</li>
+                    <li>.NET</li>
+                    <li>SQL, MongoDB, postgress</li>
+                    <li>Flux Pattern</li>
+                    <li>Model-View-Controller</li>
+                </ul>
+            </Col>
+        </Row>
     </Container>
 );
