@@ -88,15 +88,25 @@ nav.menucv {
     position: absolute;
     right: 0;
     background: #111111;
-    padding: 7px;
-    margin-top: -8px;
+    padding: 9px;
+    margin-top: -10px;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    background: gold;
+    background: gold !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active span.material-icons {
+    color: gold;
+    border-right: 4px solid gold;
 }
 
 p.text-left i.material-icons {
     font-size: 1em;
     margin-top: -2px;
+}
+
+.navbar__link--active {
+  border-bottom: 3px solid #29b6f6;
+  transition: border-bottom .5s ease-in-out;
 }

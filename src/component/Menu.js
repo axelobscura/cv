@@ -1,9 +1,11 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Link } from "react-router-dom";
 import './Menu.css';
 
 const Menu = () => {
@@ -28,22 +30,22 @@ const Menu = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav defaultActiveKey="/" className="flex-column menucv">
-                        <Nav.Link href="/professional-summary" eventKey="active">
+                        <Nav.Link activeClassName="active" href="/professional-summary">
                             <span className="material-icons">keyboard_arrow_right</span> Professional Summary
                         </Nav.Link>
-                        <Nav.Link href="/datos" eventKey="activo">
+                        <Nav.Link href="/datos">
                             <span className="material-icons">keyboard_arrow_right</span> Technical Summary
                         </Nav.Link>
-                        <Nav.Link href="/datos" eventKey="activo">
+                        <Nav.Link href="/datos">
                             <span className="material-icons">keyboard_arrow_right</span> Education
                         </Nav.Link>
-                        <Nav.Link href="/datos" eventKey="activo">
+                        <Nav.Link href="/datos">
                             <span className="material-icons">keyboard_arrow_right</span> Languages
                         </Nav.Link>
-                        <Nav.Link href="/datos" eventKey="activo">
+                        <Nav.Link href="/datos">
                             <span className="material-icons">keyboard_arrow_right</span> Professional Experience
                         </Nav.Link>
-                        <Nav.Link href="/datos" eventKey="activo">
+                        <Nav.Link href="/datos">
                             <span className="material-icons">keyboard_arrow_right</span> Contact
                         </Nav.Link>
                     </Nav>
@@ -61,4 +63,4 @@ const Menu = () => {
     )
 }
 
-export default Menu;
+export default withRouter(Menu);
