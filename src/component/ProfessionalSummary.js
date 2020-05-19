@@ -16,7 +16,7 @@ export default () => (
             </Col>
 
         </Row>
-        <Row className="iconosDev">
+        <Row className="iconosDev align-items-center">
             <Col sm={3}>
                 <h1><span className="material-icons">brightness_high</span> Skills</h1>
             </Col>
