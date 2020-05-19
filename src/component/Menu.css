@@ -91,3 +91,12 @@ nav.menucv {
     padding: 7px;
     margin-top: -8px;
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+    background: gold;
+}
+
+p.text-left i.material-icons {
+    font-size: 1em;
+    margin-top: -2px;
+}
