@@ -2,6 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import './Menu.css';
 
@@ -23,26 +24,32 @@ const Menu = () => {
                     </Col>
                 </Row>
             </Container>
-            <Nav defaultActiveKey="/" className="flex-column menucv">
-                <Nav.Link href="/professional-summary" eventKey="active">
-                    <span className="material-icons">keyboard_arrow_right</span> Professional Summary
-                </Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">
-                    <span className="material-icons">keyboard_arrow_right</span> Technical Summary
-                </Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">
-                    <span className="material-icons">keyboard_arrow_right</span> Education
-                </Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">
-                    <span className="material-icons">keyboard_arrow_right</span> Languages
-                </Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">
-                    <span className="material-icons">keyboard_arrow_right</span> Professional Experience
-                </Nav.Link>
-                <Nav.Link href="/datos" eventKey="activo">
-                    <span className="material-icons">keyboard_arrow_right</span> Contact
-                </Nav.Link>
-            </Nav>
+            <Navbar collapseOnSelect className="flex-column menucv">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav defaultActiveKey="/" className="flex-column menucv">
+                        <Nav.Link href="/professional-summary" eventKey="active">
+                            <span className="material-icons">keyboard_arrow_right</span> Professional Summary
+                        </Nav.Link>
+                        <Nav.Link href="/datos" eventKey="activo">
+                            <span className="material-icons">keyboard_arrow_right</span> Technical Summary
+                        </Nav.Link>
+                        <Nav.Link href="/datos" eventKey="activo">
+                            <span className="material-icons">keyboard_arrow_right</span> Education
+                        </Nav.Link>
+                        <Nav.Link href="/datos" eventKey="activo">
+                            <span className="material-icons">keyboard_arrow_right</span> Languages
+                        </Nav.Link>
+                        <Nav.Link href="/datos" eventKey="activo">
+                            <span className="material-icons">keyboard_arrow_right</span> Professional Experience
+                        </Nav.Link>
+                        <Nav.Link href="/datos" eventKey="activo">
+                            <span className="material-icons">keyboard_arrow_right</span> Contact
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+
             <Container className="redessociales">
                 <Row style={{ display: 'none' }}>
                     <Col><i className="material-icons">twitter</i></Col>
