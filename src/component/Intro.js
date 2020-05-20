@@ -9,9 +9,9 @@ export default () => (
     <Container className="intro" fluid>
         <Row className="m-0 p-0">
             <Col sm={12} className="m-0 p-0">
-                <h1>Welcome!</h1>
-                <h2>I'm Axel Laurent</h2>
-                <div className="m-3">
+                <h1 className="m-1 mb-0">Welcome!</h1>
+                <h2 className="m-3">I'm Axel Laurent</h2>
+                <div className="icod m-1">
                     <i className="devicon-javascript-plain m-2"></i>
                     <i className="devicon-typescript-plain m-2"></i>
                     <i className="devicon-react-original m-2"></i>
@@ -41,7 +41,7 @@ export default () => (
                 </div>
                 <hr />
                 <p>Senior Full stack JavaScript developer from México with hands on<br />experience of designing, developing and maintaining web apps as well as mobile applications.<br />Possesses diverse experience of creating multiple highly scalable applications <b>using different tech stacks</b></p>
-                <Link to="/professional-summary"><button className="btn">Professional Summary</button></Link>
+                <Link to="/professional-summary"><button className="btn m-3">Professional Summary</button></Link>
             </Col>
         </Row>
     </Container>
