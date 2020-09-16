@@ -71,7 +71,6 @@ const Technical = () => {
 
             </Row>
         </Container>
-
     )
 };
 

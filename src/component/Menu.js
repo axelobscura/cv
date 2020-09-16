@@ -24,6 +24,7 @@ class Menu extends Component {
                             <p className="text-left"><i className="material-icons">call</i> (52)(55) 3220-6321</p>
                             <p className="text-left"><i className="material-icons">email</i> axosar@gmail.com</p>
                             <p className="text-left"><i className="material-icons">directions</i> Mexico City</p>
+                            <p className="text-left"><i className="material-icons">bug_report</i> @axelobscura</p>
                         </Col>
                     </Row>
                 </Container>
@@ -37,16 +38,13 @@ class Menu extends Component {
                             <NavLink activeClassName="active" to="/technical-summary">
                                 <span className="material-icons">keyboard_arrow_right</span> Technical Summary
                             </NavLink>
-                            <NavLink activeClassName="active" to="/datos">
+                            <NavLink activeClassName="active" to="/education">
                                 <span className="material-icons">keyboard_arrow_right</span> Education
                             </NavLink>
-                            <NavLink activeClassName="active" to="/datos">
+                            <NavLink activeClassName="active" to="/languages">
                                 <span className="material-icons">keyboard_arrow_right</span> Languages
                             </NavLink>
-                            <NavLink activeClassName="active" to="/datos">
-                                <span className="material-icons">keyboard_arrow_right</span> Professional Experience
-                            </NavLink>
-                            <NavLink activeClassName="active" to="/datos">
+                            <NavLink activeClassName="active" to="/contact">
                                 <span className="material-icons">keyboard_arrow_right</span> Contact
                             </NavLink>
                         </Nav>

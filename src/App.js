@@ -9,6 +9,10 @@ import Menu from './component/Menu';
 import Intro from './component/Intro';
 import ProfessionalSummary from './component/ProfessionalSummary';
 import TecnicalSummary from './component/TechnicalSummary';
+import Education from './component/Education';
+import Languages from './component/Languages';
+import Professional from './component/Professional';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -23,6 +27,9 @@ function App() {
               <Route exact path="/" component={Intro} />
               <Route exact path="/professional-summary" component={ProfessionalSummary} />
               <Route exact path="/technical-summary" component={TecnicalSummary} />
+              <Route exact path="/education" component={Education} />
+              <Route exact path="/languages" component={Languages} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </Col>
         </Row>
