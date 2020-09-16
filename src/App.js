@@ -11,7 +11,6 @@ import ProfessionalSummary from './component/ProfessionalSummary';
 import TecnicalSummary from './component/TechnicalSummary';
 import Education from './component/Education';
 import Languages from './component/Languages';
-import Professional from './component/Professional';
 import Contact from './component/Contact';
 
 function App() {
