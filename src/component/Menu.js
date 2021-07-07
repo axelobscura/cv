@@ -19,12 +19,8 @@ class Menu extends Component {
                                 <img src="images/profile.jpeg" alt="Full Stack Developer" title="Full Stack Developer" />
                             </Nav.Link>
                             <Link to="/"><h1>Axel Laurent<br />Obscura Sarzotti</h1></Link>
-                            <h2>Full Stack Developer</h2>
-                            <hr />
-                            <p className="text-left"><i className="material-icons">call</i> (52)(55) 3220-6321</p>
-                            <p className="text-left"><i className="material-icons">email</i> axosar@gmail.com</p>
-                            <p className="text-left"><i className="material-icons">directions</i> Mexico City</p>
-                            <p className="text-left"><i className="material-icons">bug_report</i> @axelobscura</p>
+                            <h2>Senior Full Stack Developer</h2>
+                            <p className="text-center"><small>MEXICO CITY</small></p>
                         </Col>
                     </Row>
                 </Container>
@@ -50,6 +46,17 @@ class Menu extends Component {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
+                <Container className="datos personales">
+                    <Row>
+                        <Col>
+                            <hr />
+                            <p className="text-left"><i className="material-icons">call</i> (52)(55) 3220-6321</p>
+                            <p className="text-left"><i className="material-icons">email</i> axosar@gmail.com</p>
+                            <p className="text-left"><i className="material-icons">directions</i> Mexico City</p>
+                            <p className="text-left"><i className="material-icons">bug_report</i> @axelobscura</p>
+                        </Col>
+                    </Row>
+                </Container>
                 <Container className="redessociales">
                     <Row style={{ display: 'none' }}>
                         <Col><i className="material-icons">twitter</i></Col>
