@@ -6,6 +6,14 @@ import './ProfessionalSummary.css';
 
 export default () => (
     <Container className="ps tech">
+        <Row>
+            <Col>
+                <hr />
+                <h1><span className="material-icons">location_searching</span> Technical Summary</h1>
+                <hr />
+                <p>Senior Full Stack Web Developer with 17 years of experience designing and developing backend architectures, decoupled and entier frontend web and backend applications using HTML, CSS, JavaScript, JQuery, AJAX, JSON, XML, NodeJS, Express, PHP, MySQL, PosgressSQL,  Angular, ReactJS, VueJS, NextJS.<br/><br/>Full Stack Developer with hands on experience of designing, developing and maintaining web apps as well as mobile applications. Possesses diverse experience of creating multiple highly scalable applications <b>using different tech stacks</b>. Adept at understanding the requirements of the clients and delivering projects accordingly. Demonstrates the capability of maintaining code by fixing bugs as well as conducting end to end testing. Highly skilled at collaborating with team members to ship beautiful products within deadlines. Looking forward to applying the acquired gamut of skills in a challenging role.</p>
+            </Col>
+        </Row>
         <Row className="iconosDev align-items-center">
             <Col sm={1}>
             <hr />

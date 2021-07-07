@@ -1,0 +1,28 @@
+{
+  "work": [
+    {
+      "empresa": "Delart.co",
+      "rol": "Frontend Developer",
+      "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
+      "periodo": ["2021"]
+    },
+    {
+      "empresa": "Rings.io",
+      "rol": "Frontend Developer",
+      "stack": ["ReactJS", "Tailwind", "Salesforce API"],
+      "periodo": ["2021"]
+    },
+    {
+      "empresa": "Ford Company US",
+      "rol": "Frontend Developer",
+      "stack": ["ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": ["2021"]
+    },
+    {
+      "empresa": "INNOCEAN México",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": ["2021"]
+    }
+  ]
+}

@@ -18,7 +18,7 @@ class Menu extends Component {
                             <Nav.Link href="/" style={{ paddingLeft: '0' }}>
                                 <img src="images/profile.jpeg" alt="Full Stack Developer" title="Full Stack Developer" />
                             </Nav.Link>
-                            <Link to="/"><h1>Axel L.<br />Obscura Sarzotti</h1></Link>
+                            <Link to="/"><h1>Axel Laurent<br />Obscura Sarzotti</h1></Link>
                             <h2>Full Stack Developer</h2>
                             <hr />
                             <p className="text-left"><i className="material-icons">call</i> (52)(55) 3220-6321</p>
@@ -32,11 +32,11 @@ class Menu extends Component {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav defaultActiveKey="/" className="flex-column menucv">
-                            <NavLink activeClassName="active" to="/professional-summary">
-                                <span className="material-icons">keyboard_arrow_right</span> Professional Summary
-                            </NavLink>
                             <NavLink activeClassName="active" to="/technical-summary">
                                 <span className="material-icons">keyboard_arrow_right</span> Technical Summary
+                            </NavLink>
+                            <NavLink activeClassName="active" to="/professional-summary">
+                                <span className="material-icons">keyboard_arrow_right</span> Professional Summary
                             </NavLink>
                             <NavLink activeClassName="active" to="/education">
                                 <span className="material-icons">keyboard_arrow_right</span> Education
