@@ -2,27 +2,52 @@
   "work": [
     {
       "empresa": "Delart.co",
-      "rol": "Frontend Developer",
+      "rol": "Full Stack Developer",
       "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
-      "periodo": ["2021"]
+      "periodo": ["2021"],
+      "client": "DRESSLER - US Based Company"
     },
     {
       "empresa": "Rings.io",
       "rol": "Frontend Developer",
       "stack": ["ReactJS", "Tailwind", "Salesforce API"],
-      "periodo": ["2021"]
+      "periodo": ["2021"],
+      "client": "SCREEN IT - Mexico Based Company"
     },
     {
-      "empresa": "Ford Company US",
+      "empresa": "Ford Motors Company US",
       "rol": "Frontend Developer",
       "stack": ["ReactJS", "Bootstrap", "React router", "Salesforce API"],
-      "periodo": ["2021"]
+      "periodo": ["2021"],
+      "client": "US Based Company"
     },
     {
       "empresa": "INNOCEAN México",
       "rol": "Full Stack Developer",
       "stack": ["PHP", "MySQL", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
-      "periodo": ["2021"]
+      "periodo": ["2021"],
+      "client": "US Based Company"
+    },
+    {
+      "empresa": "Gobierno de la Ciudad de México - ADIP",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": ["2021"],
+      "client": "US Based Company"
+    },
+    {
+      "empresa": "THRIVE MARKET",
+      "rol": "Frontend Developer",
+      "stack": ["NextJS"],
+      "periodo": ["2021"],
+      "client": "US Based Company"
+    },
+    {
+      "empresa": "TRYBU",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": ["2021"],
+      "client": "US Based Company"
     }
   ]
 }
