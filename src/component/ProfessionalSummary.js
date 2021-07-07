@@ -54,16 +54,16 @@ export default () => (
             <Col sm={3}>
                 <h2><span className="material-icons">keyboard_arrow_right</span> Front End</h2>
                 <ul>
-                    <li>Javascript [ES5/ES6]</li>
-                    <li>Jquery</li>
-                    <li>Ajax</li>
+                    <li>Javascript [ES6]</li>
+                    
                     <li>HTML5, HTML5 Canvas</li>
                     <li>ReactJS</li>
                     <li>NextJS</li>
                     <li>Angular</li>
                     <li>VueJS</li>
+                    <li>Jquery</li>
+                    <li>Ajax</li>
                     <li>JAMStack</li>
-                    <li>NextJS</li>
                     <li>Bootstrap</li>
                     <li>Tailwind</li>
                     <li>Skeleton</li>
@@ -92,14 +92,16 @@ export default () => (
                     <li>Elastik Beanstalk</li>
                     <li>EC2</li>
                     <li>Elasticache MS</li>
-                    <li>IAM, S3</li>
+                    <li>AWS</li>
                     <li>Azure</li>
+                    <li>Digital Ocean</li>
                 </ul>
             </Col>
             <Col sm={3}>
                 <h2><span className="material-icons">keyboard_arrow_right</span> Miscellaneous</h2>
                 <ul>
-                    <li>Git, Bitbucket</li>
+                    <li>Git</li>
+                    <li>Bitbucket</li>
                     <li>Test Driven Development</li>
                     <li>Unit Testing, Mocha, Gruntt, Jest</li>
                     <li>Python</li>
