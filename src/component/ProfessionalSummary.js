@@ -17,10 +17,10 @@ export default () => (
 
         </Row>
         <Row className="iconosDev align-items-center">
-            <Col sm={3}>
-                <h1><span className="material-icons">brightness_high</span> Skills</h1>
+            <Col sm={1}>
+                <h1>Skills</h1>
             </Col>
-            <Col sm={9}>
+            <Col sm={11}>
                 <i className="devicon-javascript-plain"></i>
                 <i className="devicon-typescript-plain"></i>
                 <i className="devicon-react-original"></i>
@@ -55,22 +55,33 @@ export default () => (
                 <h2><span className="material-icons">keyboard_arrow_right</span> Front End</h2>
                 <ul>
                     <li>Javascript [ES5/ES6]</li>
-                    <li>Jquery, Ajax</li>
+                    <li>Jquery</li>
+                    <li>Ajax</li>
                     <li>HTML5, HTML5 Canvas</li>
-                    <li>React, Angular, Vue, Backbone, JAMStack</li>
+                    <li>ReactJS</li>
                     <li>NextJS</li>
-                    <li>Bootstrap, Skeleton</li>
+                    <li>Angular</li>
+                    <li>VueJS</li>
+                    <li>JAMStack</li>
+                    <li>NextJS</li>
+                    <li>Bootstrap</li>
+                    <li>Tailwind</li>
+                    <li>Skeleton</li>
                     <li>CSS, CSS3, Sass, Less, Bower</li>
                 </ul>
             </Col>
             <Col sm={3}>
                 <h2><span className="material-icons">keyboard_arrow_right</span> Back End</h2>
                 <ul>
-                    <li>Node NPM</li>
-                    <li>Express, Sails.js</li>
+                    <li>NodeJS</li>
+                    <li>Express</li>
                     <li>PHP</li>
+                    <li>Java</li>
+                    <li>Python</li>
                     <li>.NET</li>
-                    <li>SQL, MongoDB, postgress</li>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                    <li>Postgress</li>
                     <li>Flux Pattern</li>
                     <li>Model-View-Controller</li>
                 </ul>
@@ -107,8 +118,8 @@ export default () => (
         <Row>
             <Col sm={6}>
                 <ul>
-                    <li>+10 Years of software design experience in developing enterprise applications</li>
-                    <li>Experience in both <b>Client Side</b> and <b>Server Side</b> Programming</li>
+                    <li>+17 Years of software design experience in developing enterprise applications</li>
+                    <li>Experience in both <b>Frontend/Client Side</b> and <b>Backend/Server Side</b> Programming</li>
                     <li>Background in all phases of software engineering, including Analysis, Design, Coding, Testing and Implementation as well as <b>Agile</b> software development using Github</li>
                     <li>Experience in <b>NodeJS</b> backend programming and <b>Object Oriented Javascript</b></li>
                     <li>Exxtensive experience building all kinds of web apps with <b>Wordpress</b></li>
