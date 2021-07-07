@@ -19,7 +19,7 @@ export default () => (
             <Col>
                 {work.map(empleo => (
                     <>
-                        <h2>{empleo.empresa}</h2>
+                        <h2><span className="material-icons">keyboard_arrow_right</span> {empleo.empresa} | {empleo.periodo}</h2>
                         <h3><b>{empleo.rol}</b></h3>
                         <h3>{empleo.client}</h3>
                         <hr/>
