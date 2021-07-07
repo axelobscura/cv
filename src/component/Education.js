@@ -12,17 +12,21 @@ const Education = () => {
                     <hr />
                     <h1><span className="material-icons">location_searching</span> Education Summary</h1>
                     <hr />
-                    <h2>BACHELOR’S DEGREE IN GRAPHIC & DIGITAL COMMUNICATIONS | WEB DEVELOPMENT</h2>
+                    <h2><span className="material-icons droper">keyboard_arrow_right</span> BACHELOR’S DEGREE IN GRAPHIC & DIGITAL COMMUNICATIONS | WEB DEVELOPMENT</h2>
                     <h3>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h3>
                     <p>YEAR OF COMPLETION: 2004</p>
                     <hr />
-                    <h2>MASTER’S DEGREE IN VISUAL ARTS / BRANCH WEB DESIGN AND DIGITAL DEVELOPMENT</h2>
+                    <h2><span className="material-icons droper">keyboard_arrow_right</span> MASTER’S DEGREE IN VISUAL ARTS / BRANCH WEB DESIGN AND DIGITAL DEVELOPMENT</h2>
                     <h3>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</h3>
                     <p>YEAR OF COMPLETION: 2008</p>
                     <hr />
-                    <h2>MASTER’S DEGREE IN SYSTEM ENGINEERING (IN PROCESS)</h2>
+                    <h2><span className="material-icons droper">keyboard_arrow_right</span> MASTER’S DEGREE IN SYSTEM ENGINEERING (IN PROCESS)</h2>
                     <h3>UNIVERSIDAD INTERNACIONAL DE LA RIOJA</h3>
                     <p>IN PROCESS: 2019</p>
+                    <hr />
+                    <h2><span className="material-icons droper">keyboard_arrow_right</span> FULL-STACK ENGINEER (IN PROCESS)</h2>
+                    <h3>CODE ACADEMY</h3>
+                    <p>IN PROCESS: 2021</p>
                     <hr />
                     <h1><span className="material-icons">location_searching</span> COURSES</h1>
                     <hr />

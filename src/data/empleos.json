@@ -1,13 +1,6 @@
 {
   "work": [
     {
-      "empresa": "Instituto Mexicano del Cemento y del Concreto A.C",
-      "rol": "Full Stack Developer",
-      "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
-      "periodo": "2011 - 2021",
-      "client": "Mexico Based Company"
-    },
-    {
       "empresa": "Delart.co",
       "rol": "Full Stack Developer",
       "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
@@ -34,6 +27,13 @@
       "stack": ["PHP", "MySQL", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
       "periodo": "2021",
       "client": "US Based Company"
+    },
+    {
+      "empresa": "Instituto Mexicano del Cemento y del Concreto A.C",
+      "rol": "Full Stack Developer",
+      "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
+      "periodo": "2011 - 2021",
+      "client": "Mexico Based Company"
     },
     {
       "empresa": "Gobierno de la Ciudad de México - ADIP",
@@ -75,7 +75,7 @@
       "rol": "Full Stack Developer",
       "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
       "periodo": "2020",
-      "client": "Asociación Mexicana de Gerontología y Geriatría"
+      "client": "Gobierno de la Veracruz"
     },
     {
       "empresa": "SHINHAN BANK MÉXICO",
@@ -83,6 +83,13 @@
       "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
       "periodo": "2015 - 2021",
       "client": "Asociación Mexicana de Gerontología y Geriatría"
+    },
+    {
+      "empresa": "BHUVI IT SOLUTIONS",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": "2016 - 2017",
+      "client": "US Based Company"
     }
   ]
 }
