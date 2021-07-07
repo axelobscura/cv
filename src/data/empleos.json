@@ -1,6 +1,13 @@
 {
   "work": [
     {
+      "empresa": "Instituto Mexicano del Cemento y del Concreto A.C",
+      "rol": "Full Stack Developer",
+      "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
+      "periodo": "2011 - 2021",
+      "client": "Mexico Based Company"
+    },
+    {
       "empresa": "Delart.co",
       "rol": "Full Stack Developer",
       "stack": ["ReactJS", "Tailwind", "React router", "Hasura", "GraphQl"],
@@ -43,11 +50,39 @@
       "client": "US Based Company"
     },
     {
-      "empresa": "TRYBU",
+      "empresa": "TRYBU.MX",
       "rol": "Full Stack Developer",
       "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
       "periodo": "2020",
       "client": "US Based Company"
+    },
+    {
+      "empresa": "PASSUR",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": "2020",
+      "client": "US Based Company"
+    },
+    {
+      "empresa": "AMGG",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": "2020",
+      "client": "Asociación Mexicana de Gerontología y Geriatría"
+    },
+    {
+      "empresa": "MUNICIPIO DE COATZINTLA",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": "2020",
+      "client": "Asociación Mexicana de Gerontología y Geriatría"
+    },
+    {
+      "empresa": "SHINHAN BANK MÉXICO",
+      "rol": "Full Stack Developer",
+      "stack": ["PHP", "MySQL", "Wordpress", "ReactJS", "Bootstrap", "React router", "Salesforce API"],
+      "periodo": "2015 - 2021",
+      "client": "Asociación Mexicana de Gerontología y Geriatría"
     }
   ]
 }
