@@ -120,3 +120,8 @@
 .slide-pane__header {
   background: gold !important;
 }
+
+.slide-pane__content h2 {
+  color: #ffffff;
+  font-weight: bold;
+}

@@ -8,23 +8,21 @@ import './ProfessionalSummary.css';
 import { work } from '../data/empleos.json';
 
 const ProfessionalSummary = () => {
-
     const [state, setState] = useState({
-        isPaneOpen: false
+        isPaneOpen: false,
+        empresa: ''
     });
-
-    let openDroper = () => {
+    let openDroper = (nombre) => {
         setState({
-            isPaneOpen: true
+            isPaneOpen: true,
+            empresa: nombre
         })
-    }
-
+    };
     let closeDroper = () => {
         setState({
             isPaneOpen: false
         })
-    }
-
+    };
     return (
         <Container className="ps pro">
             <Row>
@@ -34,6 +32,7 @@ const ProfessionalSummary = () => {
                     <hr />
                     <Panel
                         isPaneOpen={state.isPaneOpen}
+                        nombre={state.empresa}
                         closePane={() => closeDroper()}
                     />
                 </Col>
@@ -42,7 +41,7 @@ const ProfessionalSummary = () => {
                 <Col>
                     {work.map((empleo, i) => (
                         <div key={i}>
-                            <h2 onClick={() => openDroper()}>
+                            <h2 onClick={() => openDroper(empleo.empresa)}>
                                 <span
                                     className="material-icons droper"
                                 >

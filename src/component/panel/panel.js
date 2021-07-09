@@ -4,14 +4,16 @@ import "react-sliding-pane/dist/react-sliding-pane.css";
 
 const Panel = (props) => {
   return (
-    <div>
+    <div className="panel">
       <SlidingPane
         className="some-custom-class"
         overlayClassName="some-custom-overlay-class"
         isOpen={props.isPaneOpen}
         onRequestClose={props.closePane}
       >
-        <div>And I am pane content. BTW, what rocks?</div>
+        <div>
+          <h2>COMPANY: {props.nombre}</h2>
+        </div>
       </SlidingPane>
     </div>
   );
