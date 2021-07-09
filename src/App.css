@@ -125,3 +125,18 @@
   color: #ffffff;
   font-weight: bold;
 }
+
+.slide-pane__content h3 {
+  color: gold;
+  font-weight: bold;
+}
+
+.slide-pane__content ul {
+  text-align: justify;
+  padding: 0 90px
+}
+
+.slide-pane__content ul li {
+  color: #fff;
+  font-weight: 100;
+}
