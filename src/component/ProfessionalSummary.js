@@ -19,6 +19,12 @@ const ProfessionalSummary = () => {
         })
     }
 
+    let closeDroper = () => {
+        setState({
+            isPaneOpen: false
+        })
+    }
+
     return (
         <Container className="ps pro">
             <Row>
@@ -28,6 +34,7 @@ const ProfessionalSummary = () => {
                     <hr />
                     <Panel
                         isPaneOpen={state.isPaneOpen}
+                        closePane={() => closeDroper()}
                     />
                 </Col>
             </Row>
