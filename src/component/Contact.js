@@ -14,10 +14,19 @@ const Contact = () => {
                     <hr />
                     <Row>
                         <Col>
+                            <hr />
+                                <h1><span class="material-icons">coffee</span> Contact</h1>
+                            <hr />
                         </Col>
                         <Col>
+                            <hr />
+                                <h1><span class="material-icons">coffee</span> Contact</h1>
+                            <hr />
                         </Col>
                         <Col>
+                            <hr />
+                                <h1><span class="material-icons">coffee</span> Contact</h1>
+                            <hr />
                         </Col>
                     </Row>
                     <hr />
