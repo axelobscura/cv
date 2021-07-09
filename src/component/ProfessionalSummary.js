@@ -42,10 +42,9 @@ const ProfessionalSummary = () => {
                 <Col>
                     {work.map((empleo, i) => (
                         <div key={i}>
-                            <h2>
+                            <h2 onClick={() => openDroper()}>
                                 <span
                                     className="material-icons droper"
-                                    onClick={() => openDroper()}
                                 >
                                     keyboard_arrow_right
                                 </span>
