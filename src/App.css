@@ -108,3 +108,15 @@
 .navbar-light .navbar-nav .nav-link {
   text-align: left;
 }
+
+.slide-pane {
+  background: transparent !important;
+}
+
+.slide-pane__content {
+  background: rgba(0,0,0,0.8);
+}
+
+.slide-pane__header {
+  background: gold !important;
+}
