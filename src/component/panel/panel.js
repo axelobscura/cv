@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SlidingPane from "react-sliding-pane";
 import "react-sliding-pane/dist/react-sliding-pane.css";
 
@@ -17,9 +17,6 @@ const Panel = (props) => {
           <h3>RESPONSIBILITIES</h3>
           <hr/>
           <ul>
-            <li>Involved in documentation of the architecture and configuration details</li>
-            <li>Migrated existing systems to AWS using EC2 instances, auto-scaling, created VPN's, Security Groups, configuring a Load Balancers and creation of CloudFormation automation scripts</li>
-            <li>Co-ordinate with UX designers and develop static content using front end with HTML 5, CSS3 and React/Angular JS</li>
           </ul>
         </div>
       </SlidingPane>
