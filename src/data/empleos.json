@@ -20,7 +20,10 @@
       "periodo": "2021",
       "client": "SCREEN IT - Mexico Based Company",
       "responsabilidades": [
-        "Involved in documentation of the architecture and configuration details"
+        "Involved in documentation of the architecture and configuration details",
+        "Migrated existing systems to AWS using EC2 instances, auto-scaling, created VPN's, Security Groups, configuring a Load Balancers and creation of CloudFormation automation scripts",
+        "Co-ordinate with UX designers and develop static content using front end with HTML 5, CSS3 and React/Angular JS",
+        "Full Stack Development with React-Redux in multiple APP’s"
       ]
     },
     {
