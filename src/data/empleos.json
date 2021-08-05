@@ -86,9 +86,11 @@
       "periodo": "2020",
       "client": "US Based Company",
       "responsabilidades": [
+        "Responsible of database architecture",
         "Involved in documentation of the architecture and configuration details",
-        "Involved in development",
-        "Invloved in database architecture"
+        "Migrated existing systems to AWS using EC2 instances, auto-scaling, created VPN's, Security Groups, configuring a Load Balancers and creation of CloudFormation automation scripts",
+        "Co-ordinate with UX designers and develop static content using front end with HTML 5, CSS3 and React/Angular JS",
+        "Full Stack Development with React-Redux in multiple APP’s"
       ]
     },
     {
