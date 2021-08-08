@@ -22,7 +22,7 @@ const Contact = () => {
                         <Col>
                             <hr />
                                 <h1><span class="material-icons">call</span> Phone</h1>
-                                <h3><a href="tel:525532206321">(52) 55 3220 6321</a></h3>
+                                <h3><a href="tel:525532206321">(52) 55 32206321</a></h3>
                             <hr />
                         </Col>
                         <Col>
