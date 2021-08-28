@@ -10,7 +10,7 @@ const Education = () => {
             <Row>
                 <Col>
                     <hr />
-                    <h1><span className="material-icons">location_searching</span> Education Summary</h1>
+                    <h1><span className="material-icons">location_searching</span> Education-Summary</h1>
                     <hr />
                     <h2><span className="material-icons droper">keyboard_arrow_right</span> BACHELOR’S DEGREE IN GRAPHIC & DIGITAL COMMUNICATIONS | WEB DEVELOPMENT</h2>
                     <h3>UNIVERSIDAD AUTÓNOMA METROPOLITANA</h3>
