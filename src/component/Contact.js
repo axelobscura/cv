@@ -10,7 +10,7 @@ const Contact = () => {
             <Row>
                 <Col>
                     <hr />
-                    <h1><span className="material-icons">location_searching</span> Contacto</h1>
+                    <h1><span className="material-icons">location_searching</span> Contacto:</h1>
                     <hr />
                     <Row>
                         <Col>
