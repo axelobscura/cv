@@ -16,7 +16,7 @@
     {
       "empresa": "Asymm.com",
       "rol": "Full Stack Developer",
-      "stack": ["ReactJS", "Ruby on Rails", "Tailwind", "Bootstrap", "Typescript", "React router", "Hasura", "GraphQl"],
+      "stack": ["ReactJS", "Ruby on Rails", "Tailwind", "Bootstrap", "Typescript", "React router", "Hasura", "GraphQl", "Docker", "Kubernets"],
       "periodo": "2021-2022",
       "client": "ASYMM - US Based Company",
       "responsabilidades": [
