@@ -11,7 +11,6 @@ const Contact = () => {
                 <Col>
                     <hr />
                     <h1><span className="material-icons">location_searching</span> Contacto:</h1>
-                    <hr />
                     <Row>
                         <Col>
                             <hr />
@@ -28,11 +27,10 @@ const Contact = () => {
                         <Col>
                             <hr />
                                 <h1><span class="material-icons">call</span> LinkedIn</h1>
-                                <h3><a href="tel:525532206321">(52) 55 3220 6321</a></h3>
+                                <h3><a href="https://www.linkedin.com/in/axelobscura/">/axelobscura</a></h3>
                             <hr />
                         </Col>
                     </Row>
-                    <hr />
                 </Col>
             </Row>
         </Container>
