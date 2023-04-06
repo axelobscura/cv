@@ -138,5 +138,6 @@ export default () => (
                 </ul>
             </Col>
         </Row>
+        <hr/>
     </Container>
 );
