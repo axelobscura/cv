@@ -24,6 +24,8 @@ export default () => (
                     <i className="devicon-bootstrap-plain m-2"></i>
                     <i className="devicon-css3-plain m-2"></i>
                     <i className="devicon-nodejs-plain m-2"></i>
+                </div>
+                <div className="icod m-1">
                     <i className="devicon-express-original m-2"></i>
                     <i className="devicon-php-plain m-2"></i>
                     <i className="devicon-trello-plain m-2"></i>
