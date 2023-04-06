@@ -28,9 +28,7 @@ const Entrada = () => {
                     <p className="p-0 m-2">Senior Full Stack Web Developer with 16 years of experience designing and developing backend architectures, decoupled and n-tier frontend web applications using HTML, CSS, JavaScript, JQuery, AJAX, JSON, XML, PHP, MySQL, NodeJS, Express, PostgressSQL, ReactJS, Angular, VueJS, NextJS.</p>
                 </Col>
             </Row>
-
         </Container>
-
     )
 };
 

@@ -40,14 +40,11 @@ const Datos = (props) => {
                                 </div>
                                 <p className="p-0 m-2"><b>{seccion.datos}</b>.</p>
                             </div>
-
                         </div>
                     ))}
                 </Col>
             </Row>
-
         </Container>
-
     )
 };
 

@@ -118,10 +118,7 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-
         </>
-
-
     )
 }
 

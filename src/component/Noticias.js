@@ -27,7 +27,6 @@ const Noticias = (props) => {
                 )}
             </Ticker>
         </div>
-
     )
 };
 
