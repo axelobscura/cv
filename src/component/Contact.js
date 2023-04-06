@@ -27,7 +27,7 @@ const Contact = () => {
                         <Col>
                             <hr />
                                 <h1><span class="material-icons">call</span> LinkedIn</h1>
-                                <h3><a href="https://www.linkedin.com/in/axelobscura/">/axelobscura</a></h3>
+                                <h3><a href="https://www.linkedin.com/in/axelobscura/" target='_blank'>/axelobscura</a></h3>
                             <hr />
                         </Col>
                     </Row>
