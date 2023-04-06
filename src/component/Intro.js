@@ -10,7 +10,7 @@ export default () => (
         <Row className="m-0 p-0">
             <Col sm={12} className="m-0 p-0">
                 <h1 className="m-1 mb-0">Welcome</h1>
-                <h2 className="m-3">I'm Axel Laurent Obscura Sarzotti</h2>
+                <h2 className="mt-0 pt-0">I'm Axel Laurent Obscura Sarzotti</h2>
                 <div className="icod m-1">
                     <i className="devicon-javascript-plain m-2"></i>
                     <i className="devicon-typescript-plain m-2"></i>
