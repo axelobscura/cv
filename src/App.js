@@ -21,7 +21,7 @@ function App() {
           <Col sm={2} xs={2} className="p-0 m-0" style={{ background: '#2d3e50' }}>
             <Menu />
           </Col>
-          <Col sm={10} xs={10} className="p-0 pb-5 m-0">
+          <Col sm={10} xs={10} className="p-0 m-0">
             <Switch>
               <Route exact path="/" component={Intro} />
               <Route exact path="/professional-summary" component={ProfessionalSummary} />
