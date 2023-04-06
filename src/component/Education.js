@@ -55,6 +55,7 @@ const Education = () => {
                     <p className="p-0 m-0">Anthony Alicea</p>
                 </Col>
             </Row>
+            <hr/>
         </Container>
     )
 };
