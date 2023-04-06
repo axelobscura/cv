@@ -12,7 +12,7 @@ const Panel = (props) => {
         onRequestClose={props.closePane}
       >
         <div>
-          <h2>COMPANY: {props.nombre}</h2>
+          <h2>{props.nombre}</h2>
           <hr/>
           <h3>RESPONSIBILITIES</h3>
           <hr/>

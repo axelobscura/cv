@@ -122,7 +122,7 @@ export default () => (
         <Row>
             <Col sm={6}>
                 <ul>
-                    <li>+17 Years of software design experience in developing enterprise applications</li>
+                    <li>+19 Years of software design experience in developing enterprise applications</li>
                     <li>Experience in both <b>Frontend/Client Side</b> and <b>Backend/Server Side</b> Programming</li>
                     <li>Background in all phases of software engineering, including Analysis, Design, Coding, Testing and Implementation as well as <b>Agile</b> software development using Github</li>
                     <li>Experience in <b>NodeJS</b> backend programming and <b>Object Oriented Javascript</b></li>

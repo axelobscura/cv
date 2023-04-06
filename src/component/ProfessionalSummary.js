@@ -18,9 +18,10 @@ const ProfessionalSummary = () => {
             empresa: nombre
         })
     };
-    let closeDroper = () => {
+    let closeDroper = (nombre) => {
         setState({
-            isPaneOpen: false
+            isPaneOpen: false,
+            empresa: nombre
         })
     };
     return (
