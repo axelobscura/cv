@@ -39,7 +39,6 @@ const Home = () => {
         setColor(colory);
     }
 
-    console.log(color);
     return (
         <>
             <Container fluid={true} className="d-flex">
