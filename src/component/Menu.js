@@ -19,7 +19,7 @@ class Menu extends Component {
                                 <img src="images/profile.jpeg" alt="Full Stack Developer" title="Full Stack Developer" />
                             </Nav.Link>
                             <Link to="/"><h1>Axel Laurent<br />Obscura Sarzotti</h1></Link>
-                            <h2>Senior Full Stack Developer</h2>
+                            <h2>Sr. Full Stack Developer</h2>
                             <p className="text-center"><small>MEXICO CITY</small></p>
                         </Col>
                     </Row>
