@@ -40,7 +40,8 @@ export default () => (
                     <i className="devicon-ssh-plain m-2"></i>
                 </div>
                 <hr />
-                <p>Senior Full Stack Developer with hands on<br />experience designing, developing and maintaining web apps as well as mobile applications.<br />Possesses extensive experience creating multiple highly scalable applications <b>using different tech stacks</b></p>
+                <h3><b>Senior Full Stack Developer</b></h3>
+                <p>With 19 years of experience designing, developing and maintaining web and mobile applications<br />extensive experience creating multiple highly scalable applications <b>using different modern tech stacks</b></p>
                 <Link to="/professional-summary"><button className="btn m-3">Professional Summary</button></Link>
             </Col>
         </Row>
